@@ -15,6 +15,7 @@
 		74B1A54D1C0FD4C100C8190D /* XenoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1A54C1C0FD4C100C8190D /* XenoTests.swift */; };
 		74B1A5571C0FDB6300C8190D /* question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1A5561C0FDB6300C8190D /* question.swift */; };
 		74B1A55B1C0FE13500C8190D /* racism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1A55A1C0FE13500C8190D /* racism.swift */; };
+		74B1A55D1C0FE8C100C8190D /* sexism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1A55C1C0FE8C100C8190D /* sexism.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		74B1A54C1C0FD4C100C8190D /* XenoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XenoTests.swift; sourceTree = "<group>"; };
 		74B1A5561C0FDB6300C8190D /* question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = question.swift; sourceTree = "<group>"; };
 		74B1A55A1C0FE13500C8190D /* racism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = racism.swift; sourceTree = "<group>"; };
+		74B1A55C1C0FE8C100C8190D /* sexism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sexism.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				74B1A5341C0FD4C000C8190D /* Supporting Files */,
 				74B1A5561C0FDB6300C8190D /* question.swift */,
 				74B1A55A1C0FE13500C8190D /* racism.swift */,
+				74B1A55C1C0FE8C100C8190D /* sexism.swift */,
 			);
 			path = Xeno;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B1A55D1C0FE8C100C8190D /* sexism.swift in Sources */,
 				74B1A5391C0FD4C000C8190D /* ViewController.swift in Sources */,
 				74B1A5371C0FD4C000C8190D /* AppDelegate.swift in Sources */,
 				74B1A55B1C0FE13500C8190D /* racism.swift in Sources */,
