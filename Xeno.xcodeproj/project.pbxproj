@@ -18,6 +18,7 @@
 		74B1A55D1C0FE8C100C8190D /* sexism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1A55C1C0FE8C100C8190D /* sexism.swift */; };
 		74B1A55F1C0FEDFE00C8190D /* homotransphobia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1A55E1C0FEDFE00C8190D /* homotransphobia.swift */; };
 		74B1A5611C0FF1F000C8190D /* religiocentrism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1A5601C0FF1F000C8190D /* religiocentrism.swift */; };
+		74B1A5631C0FF92C00C8190D /* ableism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1A5621C0FF92C00C8190D /* ableism.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		74B1A55C1C0FE8C100C8190D /* sexism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sexism.swift; sourceTree = "<group>"; };
 		74B1A55E1C0FEDFE00C8190D /* homotransphobia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homotransphobia.swift; sourceTree = "<group>"; };
 		74B1A5601C0FF1F000C8190D /* religiocentrism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = religiocentrism.swift; sourceTree = "<group>"; };
+		74B1A5621C0FF92C00C8190D /* ableism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ableism.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				74B1A55C1C0FE8C100C8190D /* sexism.swift */,
 				74B1A55E1C0FEDFE00C8190D /* homotransphobia.swift */,
 				74B1A5601C0FF1F000C8190D /* religiocentrism.swift */,
+				74B1A5621C0FF92C00C8190D /* ableism.swift */,
 			);
 			path = Xeno;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				74B1A5391C0FD4C000C8190D /* ViewController.swift in Sources */,
 				74B1A55F1C0FEDFE00C8190D /* homotransphobia.swift in Sources */,
 				74B1A5371C0FD4C000C8190D /* AppDelegate.swift in Sources */,
+				74B1A5631C0FF92C00C8190D /* ableism.swift in Sources */,
 				74B1A55B1C0FE13500C8190D /* racism.swift in Sources */,
 				74B1A5571C0FDB6300C8190D /* question.swift in Sources */,
 			);
