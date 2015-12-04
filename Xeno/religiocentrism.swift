@@ -14,8 +14,8 @@ class Religiocentrism {
     
     init() {
         let religiocentrismQuestionsData = [
-            "rails generate model ModelName" : "Creates a model with the specified model_name",
-            "rails generate migration MigrationName" : "Creates a migration with the specified migration_name",
+            "Anti-Semitism comes from colonization and slavery." : "False",
+            "Christian conformity refers to a pattern of assimilation whereby members of subordinate racial-ethnic groups are expected to conform to the culture of the dominant (white) Anglo-Saxon population." : "False",
             "rails generate controller ControllerName" : "Creates a controller with the specified controller_name",
             "rails generate scaffold ModelName" : "Provides shortcut for creating your controller, model and view files in one step",
             "rails destroy scaffold ModelName" : "Destroys the created controller, model and view files that were generated for the given Model",
