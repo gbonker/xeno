@@ -8,16 +8,20 @@
 
 import Foundation
 
-var question: String = ""
-var answer: String = ""
-var isCorrect: Bool = true //whether you got a question right or wrong
+//var question: String = ""
+//var answer: String = ""
+//var isCorrect: Bool = true //whether you got a question right or wrong
 
 struct Question {
-    let question, answer: String
-    let isCorrect: Bool
-    init(question: String, answer: String) {
+    let question: String
+    let answer: Bool
+    init(question: String, answer: Bool ) {
         self.question = question
         self.answer = answer
-        self.isCorrect = isCorrect;
     }
+
+    func isCorrect(userAnswer: Bool) -> Bool {
+        return (userAnswer == answer)
+    }
+
 }
