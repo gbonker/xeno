@@ -22,17 +22,24 @@ class AnswerViewController: UIViewController {
         if let question = question {
             questionLabel.text = question.question
             if question.answer == true {
-                if segue.identifier == "showAnswerTrue" {
-                    answerLabel.text = "Correct! This statement is true."
-                } else {
-                    answerLabel.text = "Incorrect! This statement is actually true."
-                }
+                answerLabel.text = "True"
+                
+                // wrong because you can't just call the name of the segue. need to handle this in a game manager.
+                //if segue.identifier == "showAnswerTrue" {
+                //    answerLabel.text = "Correct! This statement is true."
+                //} else {
+                //    answerLabel.text = "Incorrect! This statement is actually true."
+                //}
+                
             } else { //question.answer == false
-                if segue.identifier == "showAnswerFalse" {
-                    answerLabel.text = "Correct! This statement is false."
-                } else {
-                    answerLabel.text = "Incorrect! This statement is actually true."
-                }
+                answerLabel.text = "False"
+                
+                //if segue.identifier == "showAnswerFalse" {
+                //    answerLabel.text = "Correct! This statement is false."
+                //} else {
+                //    answerLabel.text = "Incorrect! This statement is actually true."
+                //}
+            
             }
         }
     }

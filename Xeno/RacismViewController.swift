@@ -12,7 +12,9 @@ class RacismViewController: UIViewController {
 
     let questionSet = QuestionSet(choice: "racism")
     var question: Question?
+    
     @IBOutlet weak var questionLabel: UILabel!
+    
     @IBOutlet weak var scoreLabel: UILabel!
     
     override func viewDidLoad() {
