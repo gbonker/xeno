@@ -21,25 +21,10 @@ class AnswerViewController: UIViewController {
         // we need to safely unpack the question and display the data, if present
         if let question = question {
             questionLabel.text = question.question
-            if question.answer == true {
+            if question.isCorrect(true) {
                 answerLabel.text = "True"
-                
-                // wrong because you can't just call the name of the segue. need to handle this in a game manager.
-                //if segue.identifier == "showAnswerTrue" {
-                //    answerLabel.text = "Correct! This statement is true."
-                //} else {
-                //    answerLabel.text = "Incorrect! This statement is actually true."
-                //}
-                
-            } else { //question.answer == false
+            } else {
                 answerLabel.text = "False"
-                
-                //if segue.identifier == "showAnswerFalse" {
-                //    answerLabel.text = "Correct! This statement is false."
-                //} else {
-                //    answerLabel.text = "Incorrect! This statement is actually true."
-                //}
-            
             }
         }
     }
