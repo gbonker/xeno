@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ozj-D9-M8A">
-                                <rect key="frame" x="28" y="157" width="544" height="21"/>
+                                <rect key="frame" x="28" y="184" width="544" height="21"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -33,7 +33,7 @@
                                 <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvv-aI-lBI">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvv-aI-lBI">
                                 <rect key="frame" x="28" y="468" width="240" height="40"/>
                                 <color key="backgroundColor" red="0.4549019608" green="0.78039215689999997" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -48,7 +48,7 @@
                                     <segue destination="r85-gp-MsT" kind="push" identifier="showAnswerTrue" id="cnU-aX-e2x"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTB-xC-a0y">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTB-xC-a0y">
                                 <rect key="frame" x="332" y="468" width="240" height="40"/>
                                 <color key="backgroundColor" red="0.90588235289999997" green="0.30980392159999998" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -63,33 +63,52 @@
                                     <segue destination="r85-gp-MsT" kind="push" identifier="showAnswerFalse" id="zAM-Yr-kiq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="##" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CM-RH-Tmx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="##" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CM-RH-Tmx">
                                 <rect key="frame" x="557" y="85" width="27" height="21"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KdV-38-k6S">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" red="0.53725490200000003" green="0.62745098040000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="KannadaSangamMN-Bold" family="Kannada Sangam MN" pointSize="16"/>
+                                    <color key="textColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Racism" id="SX4-Uo-JbF"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="sie-EL-SqM" firstAttribute="leading" secondItem="7Pe-ZW-60V" secondAttribute="leadingMargin" constant="485" id="4Gc-6x-FSb"/>
+                            <constraint firstItem="KdV-38-k6S" firstAttribute="leading" secondItem="7Pe-ZW-60V" secondAttribute="leading" id="8ld-7q-xcq"/>
                             <constraint firstItem="NTB-xC-a0y" firstAttribute="height" secondItem="hvv-aI-lBI" secondAttribute="height" id="AQy-Ln-8dn"/>
                             <constraint firstItem="NTB-xC-a0y" firstAttribute="leading" secondItem="hvv-aI-lBI" secondAttribute="trailing" constant="64" id="Bsb-T5-aMr"/>
-                            <constraint firstItem="pui-Zh-6dD" firstAttribute="top" secondItem="hvv-aI-lBI" secondAttribute="bottom" constant="43" id="BzW-Gd-gYQ"/>
+                            <constraint firstItem="pui-Zh-6dD" firstAttribute="top" secondItem="hvv-aI-lBI" secondAttribute="bottom" constant="45" id="BzW-Gd-gYQ"/>
                             <constraint firstItem="0CM-RH-Tmx" firstAttribute="leading" secondItem="sie-EL-SqM" secondAttribute="trailing" constant="2" id="Gxo-eI-HIY"/>
+                            <constraint firstItem="KdV-38-k6S" firstAttribute="top" secondItem="LKs-Io-BMe" secondAttribute="bottom" id="KVk-Gl-NeP"/>
                             <constraint firstAttribute="trailing" secondItem="Ozj-D9-M8A" secondAttribute="trailing" constant="28" id="Me3-Ur-hkF"/>
                             <constraint firstItem="0CM-RH-Tmx" firstAttribute="trailing" secondItem="7Pe-ZW-60V" secondAttribute="trailingMargin" id="MgI-GH-RyD"/>
+                            <constraint firstAttribute="trailing" secondItem="KdV-38-k6S" secondAttribute="trailing" id="b4G-i2-HLC"/>
                             <constraint firstItem="NTB-xC-a0y" firstAttribute="width" secondItem="hvv-aI-lBI" secondAttribute="width" id="bgM-Rx-MjC"/>
+                            <constraint firstItem="sie-EL-SqM" firstAttribute="top" secondItem="KdV-38-k6S" secondAttribute="bottom" constant="21" id="cwE-C4-9L6"/>
                             <constraint firstItem="Ozj-D9-M8A" firstAttribute="top" secondItem="LKs-Io-BMe" secondAttribute="bottom" constant="93" id="cyB-y2-igK"/>
+                            <constraint firstItem="Ozj-D9-M8A" firstAttribute="top" secondItem="KdV-38-k6S" secondAttribute="bottom" constant="120" id="fk7-JT-hTz"/>
                             <constraint firstItem="Ozj-D9-M8A" firstAttribute="leading" secondItem="7Pe-ZW-60V" secondAttribute="leading" constant="28" id="mLC-ii-Xdu"/>
                             <constraint firstItem="hvv-aI-lBI" firstAttribute="leading" secondItem="7Pe-ZW-60V" secondAttribute="leading" constant="28" id="oax-2R-o2F"/>
                             <constraint firstItem="sie-EL-SqM" firstAttribute="top" secondItem="LKs-Io-BMe" secondAttribute="bottom" constant="21" id="rck-sy-INa"/>
                             <constraint firstAttribute="trailing" secondItem="NTB-xC-a0y" secondAttribute="trailing" constant="28" id="uku-vc-alj"/>
-                            <constraint firstItem="pui-Zh-6dD" firstAttribute="top" secondItem="NTB-xC-a0y" secondAttribute="bottom" constant="43" id="xuq-LQ-y2U"/>
+                            <constraint firstItem="0CM-RH-Tmx" firstAttribute="top" secondItem="KdV-38-k6S" secondAttribute="bottom" constant="21" id="xU4-Em-xKp"/>
+                            <constraint firstItem="pui-Zh-6dD" firstAttribute="top" secondItem="NTB-xC-a0y" secondAttribute="bottom" constant="45" id="xuq-LQ-y2U"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="cyB-y2-igK"/>
                                 <exclude reference="4Gc-6x-FSb"/>
+                                <exclude reference="rck-sy-INa"/>
                             </mask>
                         </variation>
                     </view>
@@ -114,15 +133,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Response (Correct or Incorrect)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sat-xM-qwz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Response (Correct or Incorrect)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sat-xM-qwz">
                                 <rect key="frame" x="180" y="366" width="241" height="21"/>
                                 <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLV-ng-AuF">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLV-ng-AuF">
                                 <rect key="frame" x="28" y="473" width="544" height="40"/>
                                 <color key="backgroundColor" red="0.53725490200000003" green="0.62745098040000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="X7P-ns-bMk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <state key="normal" title="Next Question">
                                     <color key="titleColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -132,14 +154,8 @@
                                     <segue destination="EUF-V7-d0T" kind="push" id="oiF-jd-coE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Question Text" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eP6-i8-gUL">
-                                <rect key="frame" x="28" y="160" width="544" height="21"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
-                                <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GPR-O5-sgQ">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPR-O5-sgQ">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <color key="barTintColor" red="0.53725490200000003" green="0.62745098040000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" name="KannadaSangamMN-Bold" family="Kannada Sangam MN" pointSize="16"/>
@@ -149,14 +165,20 @@
                                     <navigationItem title="Answer" id="0Xm-OC-gI5"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJj-7I-Xq0">
-                                <rect key="frame" x="499" y="65" width="54" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJj-7I-Xq0">
+                                <rect key="frame" x="495" y="78" width="54" height="21"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="##" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9u-fu-IhZ">
-                                <rect key="frame" x="557" y="65" width="27" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="##" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9u-fu-IhZ">
+                                <rect key="frame" x="557" y="78" width="27" height="21"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eP6-i8-gUL">
+                                <rect key="frame" x="28" y="184" width="544" height="21"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -164,20 +186,29 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="zWu-6F-dNn" firstAttribute="top" secondItem="XLV-ng-AuF" secondAttribute="bottom" constant="45" id="0h8-Sd-Upl"/>
                             <constraint firstAttribute="centerX" secondItem="eP6-i8-gUL" secondAttribute="centerX" id="4zF-hN-f7Y"/>
-                            <constraint firstItem="eP6-i8-gUL" firstAttribute="top" secondItem="GPR-O5-sgQ" secondAttribute="bottom" constant="116" id="BFa-WZ-MjR"/>
+                            <constraint firstItem="eP6-i8-gUL" firstAttribute="top" secondItem="GPR-O5-sgQ" secondAttribute="bottom" constant="120" id="BFa-WZ-MjR"/>
                             <constraint firstItem="WJj-7I-Xq0" firstAttribute="top" secondItem="GPR-O5-sgQ" secondAttribute="bottom" constant="21" id="I5j-uK-Qah"/>
                             <constraint firstItem="XLV-ng-AuF" firstAttribute="leading" secondItem="Rsv-ga-aEk" secondAttribute="leading" constant="28" id="JI8-P3-IGk"/>
                             <constraint firstItem="N9u-fu-IhZ" firstAttribute="top" secondItem="GPR-O5-sgQ" secondAttribute="bottom" constant="21" id="KNu-Go-vnp"/>
                             <constraint firstAttribute="trailing" secondItem="WJj-7I-Xq0" secondAttribute="trailing" constant="47" id="WFU-ZU-U7s"/>
                             <constraint firstAttribute="trailing" secondItem="eP6-i8-gUL" secondAttribute="trailing" constant="28" id="Yoh-oM-m2J"/>
+                            <constraint firstItem="GPR-O5-sgQ" firstAttribute="leading" secondItem="Rsv-ga-aEk" secondAttribute="leading" id="cDO-EF-jMW"/>
                             <constraint firstItem="sat-xM-qwz" firstAttribute="top" secondItem="GPR-O5-sgQ" secondAttribute="bottom" constant="322" id="g0L-1h-dDP"/>
                             <constraint firstAttribute="trailing" secondItem="N9u-fu-IhZ" secondAttribute="trailing" constant="16" id="h5U-Li-xlQ"/>
                             <constraint firstAttribute="trailing" secondItem="XLV-ng-AuF" secondAttribute="trailing" constant="28" id="hhI-aR-BnH"/>
                             <constraint firstAttribute="centerX" secondItem="sat-xM-qwz" secondAttribute="centerX" id="mym-vk-WmQ"/>
                             <constraint firstItem="XLV-ng-AuF" firstAttribute="top" secondItem="GPR-O5-sgQ" secondAttribute="bottom" constant="430" id="nHT-CQ-s9N"/>
                             <constraint firstItem="eP6-i8-gUL" firstAttribute="leading" secondItem="Rsv-ga-aEk" secondAttribute="leading" constant="28" id="o61-ny-l1T"/>
+                            <constraint firstAttribute="trailing" secondItem="GPR-O5-sgQ" secondAttribute="trailing" id="sfx-hi-7Kn"/>
+                            <constraint firstItem="GPR-O5-sgQ" firstAttribute="top" secondItem="BGP-ei-SBt" secondAttribute="bottom" id="xtX-p8-WcQ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="nHT-CQ-s9N"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="rrr-PZ-Y5Z"/>
                     <connections>
