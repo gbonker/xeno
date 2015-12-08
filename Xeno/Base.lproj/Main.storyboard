@@ -128,6 +128,9 @@
                                     <color key="titleColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="EUF-V7-d0T" kind="push" id="oiF-jd-coE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Question Text" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eP6-i8-gUL">
                                 <rect key="frame" x="28" y="160" width="544" height="21"/>
@@ -189,7 +192,7 @@
         <!--Item-->
         <scene sceneID="5xv-md-Dxc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gJS-pE-LDq" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="gJS-pE-LDq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="V2E-fj-9eW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qXA-2F-43O">
@@ -226,5 +229,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="cnU-aX-e2x"/>
+        <segue reference="oiF-jd-coE"/>
     </inferredMetricsTieBreakers>
 </document>
