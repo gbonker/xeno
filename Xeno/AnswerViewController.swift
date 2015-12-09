@@ -11,12 +11,19 @@ import UIKit
 class AnswerViewController: UIViewController {
 
     var question: Question?
+    var game = Game()
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var answerLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //updateLabels()
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         
         // we need to safely unpack the question and display the data, if present
         if let question = question {
@@ -26,14 +33,19 @@ class AnswerViewController: UIViewController {
             } else {
                 answerLabel.text = "False"
             }
+            game.calculateScore()
+            updateLabels()
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    func updateLabels() {
+        scoreLabel.text = String(game.score)
+    }
 
     /*
     // MARK: - Navigation

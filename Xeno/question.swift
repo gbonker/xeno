@@ -8,10 +8,6 @@
 
 import Foundation
 
-//var question: String = ""
-//var answer: String = ""
-//var isCorrect: Bool = true //whether you got a question right or wrong
-
 struct Question {
     let question: String
     let answer: Bool

@@ -12,6 +12,8 @@ class RacismViewController: UIViewController {
 
     let questionSet = QuestionSet(choice: "racism")
     var question: Question?
+    var game = Game()
+    var userAnswer: Bool?
     
     @IBOutlet weak var questionLabel: UILabel!
     
@@ -19,13 +21,7 @@ class RacismViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // from flashcards lab
-//        if let question = questionSet.drawRandomQuestion() {
-//            self.question = question
-//            questionLabel.text = question.question
-//        }
-        
+        //updateLabels()
     }
     
     // because we want a new question every time this view appears
@@ -34,8 +30,18 @@ class RacismViewController: UIViewController {
         if let question = questionSet.drawRandomQuestion() {
             self.question = question
             questionLabel.text = question.question
+            
         }
     }
+    
+//    @IBAction func userAnsweredTrue() {
+//        userAnswer = true
+//    }
+//    
+//    
+//    @IBAction func userAnsweredFalse() {
+//        userAnswer = false
+//    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showAnswerTrue" {
@@ -52,7 +58,10 @@ class RacismViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func updateLabels() {
+        scoreLabel.text = String(game.score)
+    }
 
 }
 

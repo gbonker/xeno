@@ -86,7 +86,7 @@
                             <constraint firstItem="sie-EL-SqM" firstAttribute="leading" secondItem="7Pe-ZW-60V" secondAttribute="leadingMargin" constant="485" id="4Gc-6x-FSb"/>
                             <constraint firstItem="KdV-38-k6S" firstAttribute="leading" secondItem="7Pe-ZW-60V" secondAttribute="leading" id="8ld-7q-xcq"/>
                             <constraint firstItem="NTB-xC-a0y" firstAttribute="height" secondItem="hvv-aI-lBI" secondAttribute="height" id="AQy-Ln-8dn"/>
-                            <constraint firstItem="NTB-xC-a0y" firstAttribute="leading" secondItem="hvv-aI-lBI" secondAttribute="trailing" constant="64" id="Bsb-T5-aMr"/>
+                            <constraint firstItem="NTB-xC-a0y" firstAttribute="leading" secondItem="hvv-aI-lBI" secondAttribute="trailing" constant="28" id="Bsb-T5-aMr"/>
                             <constraint firstItem="pui-Zh-6dD" firstAttribute="top" secondItem="hvv-aI-lBI" secondAttribute="bottom" constant="45" id="BzW-Gd-gYQ"/>
                             <constraint firstItem="0CM-RH-Tmx" firstAttribute="leading" secondItem="sie-EL-SqM" secondAttribute="trailing" constant="2" id="Gxo-eI-HIY"/>
                             <constraint firstItem="KdV-38-k6S" firstAttribute="top" secondItem="LKs-Io-BMe" secondAttribute="bottom" id="KVk-Gl-NeP"/>
@@ -214,6 +214,7 @@
                     <connections>
                         <outlet property="answerLabel" destination="sat-xM-qwz" id="VtN-HU-TP6"/>
                         <outlet property="questionLabel" destination="eP6-i8-gUL" id="Nrm-hw-Vdj"/>
+                        <outlet property="scoreLabel" destination="N9u-fu-IhZ" id="dbD-pd-ZSf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ocx-w2-n0J" userLabel="First Responder" sceneMemberID="firstResponder"/>

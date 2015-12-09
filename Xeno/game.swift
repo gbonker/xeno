@@ -25,7 +25,7 @@ class Game {
                 self.score += 1
             }
         } else {
-            self.score = 0
+            self.score += 0
         }
     }
     
