@@ -45,6 +45,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="userAnsweredTrue" destination="EUF-V7-d0T" eventType="touchUpInside" id="dhD-Z5-J77"/>
                                     <segue destination="r85-gp-MsT" kind="push" identifier="showAnswerTrue" id="cnU-aX-e2x"/>
                                 </connections>
                             </button>
@@ -60,6 +61,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="userAnsweredFalse" destination="EUF-V7-d0T" eventType="touchUpInside" id="NgF-Sz-rhP"/>
                                     <segue destination="r85-gp-MsT" kind="push" identifier="showAnswerFalse" id="zAM-Yr-kiq"/>
                                 </connections>
                             </button>

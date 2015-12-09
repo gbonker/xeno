@@ -11,7 +11,8 @@ import UIKit
 class AnswerViewController: UIViewController {
 
     var question: Question?
-    var game = Game()
+    var game: Game?
+    var userAnswer: Bool?
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var answerLabel: UILabel!
@@ -19,21 +20,26 @@ class AnswerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //updateLabels()
+        //game.calculateScore()
+        updateLabels()
     }
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
         // we need to safely unpack the question and display the data, if present
-        if let question = question {
-            questionLabel.text = question.question
-            if question.isCorrect(true) {
+        if let thisQuestion = question {
+            game!.question = thisQuestion
+            game!.userAnswer = userAnswer
+            questionLabel.text = thisQuestion.question
+            
+            
+            if thisQuestion.isCorrect(true) {
                 answerLabel.text = "True"
             } else {
                 answerLabel.text = "False"
             }
-            game.calculateScore()
+            game!.calculateScore()
             updateLabels()
         }
     }
@@ -44,7 +50,7 @@ class AnswerViewController: UIViewController {
     }
     
     func updateLabels() {
-        scoreLabel.text = String(game.score)
+        scoreLabel.text = String(game!.score)
     }
 
     /*

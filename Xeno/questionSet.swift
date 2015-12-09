@@ -37,7 +37,13 @@ class QuestionSet {
         "It is okay to dress up as a generic, stereotypical person from a culture that is not your own on Halloween as long as you are not doing so maliciously." : false,
         "In institutions of higher education, affirmative action refers to admission policies that provide equal access to education for those groups that have been historically excluded or underrepresented, such as minorities." : true,
         "White student unions and other groups that respond to safe spaces being made for people of color are criticized because society already affirms their existence, but people of color create these spaces because there is a need for them to escape from prejudice." : true,
-        "It is acceptable to call someone the N word if you are friends with them, regardless of your or their race." : false
+        "It is acceptable to call someone the N word if you are friends with them, regardless of your or their race." : false,
+        "It is the responsibility of people of color to explain their culture to people who are not members of that culture." : false,
+        "It is a form of privilege to be able to go about your day and not have to think about your race." : true,
+        "People with black-sounding names are 50% less likely to be contacted after giving their resume to an employer than people with white-sounding names with the same exact resume." : true,
+        "Blackface originated from white actors who would dress up and act as black people because black people were not allowed on stage." : true,
+        "Cultural appropriation occurs when you cherry-pick bits and pieces of a culture that is not your own that you like, while stripping those pieces of culture from their original context and meaning within that culture." : true,
+        "You cannot appreciate a culture that is not your own without contributing to cultural appropriation." : false
     ]
     
     let sexismQuestionsData = [

@@ -16,7 +16,6 @@ class RacismViewController: UIViewController {
     var userAnswer: Bool?
     
     @IBOutlet weak var questionLabel: UILabel!
-    
     @IBOutlet weak var scoreLabel: UILabel!
     
     override func viewDidLoad() {
@@ -34,23 +33,31 @@ class RacismViewController: UIViewController {
         }
     }
     
-//    @IBAction func userAnsweredTrue() {
-//        userAnswer = true
-//    }
-//    
-//    
-//    @IBAction func userAnsweredFalse() {
-//        userAnswer = false
-//    }
+    @IBAction func userAnsweredTrue() {
+        userAnswer = true
+        game.userAnswer = true
+    }
+    
+    
+    @IBAction func userAnsweredFalse() {
+        userAnswer = false
+        game.userAnswer = false
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showAnswerTrue" {
+            game.userAnswer = true
             let showDefinition:AnswerViewController = segue.destinationViewController as! AnswerViewController
             showDefinition.question = self.question
+            showDefinition.game = self.game
+            showDefinition.userAnswer = userAnswer
         }
         if segue.identifier == "showAnswerFalse" {
+            game.userAnswer = false
             let showDefinition:AnswerViewController = segue.destinationViewController as! AnswerViewController
             showDefinition.question = self.question
+            showDefinition.game = self.game
+            showDefinition.userAnswer = userAnswer
         }
     }
     
