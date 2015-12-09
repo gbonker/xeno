@@ -14,11 +14,6 @@
 		74B1A5411C0FD4C100C8190D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74B1A53F1C0FD4C100C8190D /* LaunchScreen.xib */; };
 		74B1A54D1C0FD4C100C8190D /* XenoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1A54C1C0FD4C100C8190D /* XenoTests.swift */; };
 		74B1A5571C0FDB6300C8190D /* question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1A5561C0FDB6300C8190D /* question.swift */; };
-		74B1A55B1C0FE13500C8190D /* racismQuestionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1A55A1C0FE13500C8190D /* racismQuestionSet.swift */; };
-		74B1A55D1C0FE8C100C8190D /* sexismQuestionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1A55C1C0FE8C100C8190D /* sexismQuestionSet.swift */; };
-		74B1A55F1C0FEDFE00C8190D /* homotransphobiaQuestionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1A55E1C0FEDFE00C8190D /* homotransphobiaQuestionSet.swift */; };
-		74B1A5611C0FF1F000C8190D /* religiocentrismQuestionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1A5601C0FF1F000C8190D /* religiocentrismQuestionSet.swift */; };
-		74B1A5631C0FF92C00C8190D /* ableismQuestionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1A5621C0FF92C00C8190D /* ableismQuestionSet.swift */; };
 		74D031DF1C15F950005974EF /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D031DE1C15F950005974EF /* AnswerViewController.swift */; };
 		74D031E11C160B6E005974EF /* questionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D031E01C160B6E005974EF /* questionSet.swift */; };
 		74D031E31C162B32005974EF /* game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D031E21C162B32005974EF /* game.swift */; };
@@ -46,11 +41,6 @@
 		74B1A54B1C0FD4C100C8190D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74B1A54C1C0FD4C100C8190D /* XenoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XenoTests.swift; sourceTree = "<group>"; };
 		74B1A5561C0FDB6300C8190D /* question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = question.swift; sourceTree = "<group>"; };
-		74B1A55A1C0FE13500C8190D /* racismQuestionSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = racismQuestionSet.swift; sourceTree = "<group>"; };
-		74B1A55C1C0FE8C100C8190D /* sexismQuestionSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sexismQuestionSet.swift; sourceTree = "<group>"; };
-		74B1A55E1C0FEDFE00C8190D /* homotransphobiaQuestionSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homotransphobiaQuestionSet.swift; sourceTree = "<group>"; };
-		74B1A5601C0FF1F000C8190D /* religiocentrismQuestionSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = religiocentrismQuestionSet.swift; sourceTree = "<group>"; };
-		74B1A5621C0FF92C00C8190D /* ableismQuestionSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ableismQuestionSet.swift; sourceTree = "<group>"; };
 		74D031DE1C15F950005974EF /* AnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 		74D031E01C160B6E005974EF /* questionSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = questionSet.swift; sourceTree = "<group>"; };
 		74D031E21C162B32005974EF /* game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = game.swift; sourceTree = "<group>"; };
@@ -104,11 +94,6 @@
 				74B1A5341C0FD4C000C8190D /* Supporting Files */,
 				74B1A5561C0FDB6300C8190D /* question.swift */,
 				74D031E01C160B6E005974EF /* questionSet.swift */,
-				74B1A55A1C0FE13500C8190D /* racismQuestionSet.swift */,
-				74B1A55C1C0FE8C100C8190D /* sexismQuestionSet.swift */,
-				74B1A55E1C0FEDFE00C8190D /* homotransphobiaQuestionSet.swift */,
-				74B1A5601C0FF1F000C8190D /* religiocentrismQuestionSet.swift */,
-				74B1A5621C0FF92C00C8190D /* ableismQuestionSet.swift */,
 				74D031E21C162B32005974EF /* game.swift */,
 			);
 			path = Xeno;
@@ -240,15 +225,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				74D031E11C160B6E005974EF /* questionSet.swift in Sources */,
-				74B1A5611C0FF1F000C8190D /* religiocentrismQuestionSet.swift in Sources */,
 				74D031E31C162B32005974EF /* game.swift in Sources */,
-				74B1A55D1C0FE8C100C8190D /* sexismQuestionSet.swift in Sources */,
 				74B1A5391C0FD4C000C8190D /* RacismViewController.swift in Sources */,
-				74B1A55F1C0FEDFE00C8190D /* homotransphobiaQuestionSet.swift in Sources */,
 				74D031DF1C15F950005974EF /* AnswerViewController.swift in Sources */,
 				74B1A5371C0FD4C000C8190D /* AppDelegate.swift in Sources */,
-				74B1A5631C0FF92C00C8190D /* ableismQuestionSet.swift in Sources */,
-				74B1A55B1C0FE13500C8190D /* racismQuestionSet.swift in Sources */,
 				74B1A5571C0FDB6300C8190D /* question.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
