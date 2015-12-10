@@ -57,6 +57,7 @@ class SexismViewController: UIViewController {
             showAnswer.question = self.question
             showAnswer.game = self.game
             showAnswer.userAnswer = userAnswer
+            //showAnswer.sourceVC = "sexism"
         }
         if segue.identifier == "sexismShowAnswerFalse" {
             let showAnswer:AnswerViewController = segue.destinationViewController as! AnswerViewController

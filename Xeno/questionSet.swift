@@ -48,7 +48,8 @@ class QuestionSet {
         "Dressing up as a geisha for Halloween is offensive if you are not Japanese because by dressing up as a traditionally submissive character, you are appropriating stereotypes that Japanese women then have to live with every day." : true,
         "Wearing a Native American headdress either for Halloween or to a sporting event when you are not Native American is an example of cultural appropriation because the headdress is worn by worthy elder Native Americans as a symbol of leadership status and respect, but if you wear it outside of that context that meaning is lost." : true,
         "Buying a purse of a Native American style that was made by a Native American artist because you like it and want to support the artist's work while you are not Native American yourself is an example of cultural appropriation." : false,
-        "Someone who is not Mexican wearing a sombrero on Cinco de Mayo while they go out partying is an example of cultural appreciation." : false
+        "Someone who is not Mexican wearing a sombrero on Cinco de Mayo while they go out partying is an example of cultural appreciation." : false,
+        "It is okay to use African American Vernacular English (AAVE) if you are not black." : false
     ]
     
     let sexismQuestionsData = [

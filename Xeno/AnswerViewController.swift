@@ -13,6 +13,7 @@ class AnswerViewController: UIViewController {
     var question: Question?
     var game = Game()
     var userAnswer: Bool?
+    //var sourceVC: String = "NA"
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var answerLabel: UILabel!
@@ -54,7 +55,7 @@ class AnswerViewController: UIViewController {
             let showRacism:RacismViewController = segue.destinationViewController as! RacismViewController
             showRacism.game = self.game
         }
-        if segue.identifier == "showSexismViewController" {
+        if segue.identifier == "showRacismViewController" {
             let showSexism:SexismViewController = segue.destinationViewController as! SexismViewController
             showSexism.game = self.game
         }

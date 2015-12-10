@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Racism View Controller-->
+        <!--Racism-->
         <scene sceneID="Ibo-Yu-5dl">
             <objects>
                 <viewController id="EUF-V7-d0T" customClass="RacismViewController" customModule="Xeno" customModuleProvider="target" sceneMemberID="viewController">
@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="pui-Zh-6dD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7Pe-ZW-60V">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ozj-D9-M8A">
@@ -46,7 +46,7 @@
                                 </state>
                                 <connections>
                                     <action selector="userAnsweredTrue" destination="EUF-V7-d0T" eventType="touchUpInside" id="dhD-Z5-J77"/>
-                                    <segue destination="r85-gp-MsT" kind="push" identifier="racismShowAnswerTrue" id="cnU-aX-e2x"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="racismShowAnswerTrue" id="nr5-8e-N4u"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTB-xC-a0y">
@@ -62,7 +62,7 @@
                                 </state>
                                 <connections>
                                     <action selector="userAnsweredFalse" destination="EUF-V7-d0T" eventType="touchUpInside" id="NgF-Sz-rhP"/>
-                                    <segue destination="r85-gp-MsT" kind="push" identifier="racismShowAnswerFalse" id="zAM-Yr-kiq"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="racismShowAnswerFalse" id="6H3-ol-8sL"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="##" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CM-RH-Tmx">
@@ -71,39 +71,26 @@
                                 <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KdV-38-k6S">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <color key="barTintColor" red="0.53725490200000003" green="0.62745098040000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="KannadaSangamMN-Bold" family="Kannada Sangam MN" pointSize="16"/>
-                                    <color key="textColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Racism" id="SX4-Uo-JbF"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="sie-EL-SqM" firstAttribute="top" secondItem="LKs-Io-BMe" secondAttribute="bottom" constant="21" id="1U7-3t-EQN"/>
+                            <constraint firstItem="0CM-RH-Tmx" firstAttribute="top" secondItem="LKs-Io-BMe" secondAttribute="bottom" constant="21" id="2m3-yu-xpe"/>
                             <constraint firstItem="sie-EL-SqM" firstAttribute="leading" secondItem="7Pe-ZW-60V" secondAttribute="leadingMargin" constant="485" id="4Gc-6x-FSb"/>
-                            <constraint firstItem="KdV-38-k6S" firstAttribute="leading" secondItem="7Pe-ZW-60V" secondAttribute="leading" id="8ld-7q-xcq"/>
                             <constraint firstItem="NTB-xC-a0y" firstAttribute="height" secondItem="hvv-aI-lBI" secondAttribute="height" id="AQy-Ln-8dn"/>
                             <constraint firstItem="NTB-xC-a0y" firstAttribute="leading" secondItem="hvv-aI-lBI" secondAttribute="trailing" constant="28" id="Bsb-T5-aMr"/>
                             <constraint firstItem="pui-Zh-6dD" firstAttribute="top" secondItem="hvv-aI-lBI" secondAttribute="bottom" constant="45" id="BzW-Gd-gYQ"/>
+                            <constraint firstAttribute="centerX" secondItem="Ozj-D9-M8A" secondAttribute="centerX" id="CRm-EV-6p0"/>
                             <constraint firstItem="0CM-RH-Tmx" firstAttribute="leading" secondItem="sie-EL-SqM" secondAttribute="trailing" constant="2" id="Gxo-eI-HIY"/>
-                            <constraint firstItem="KdV-38-k6S" firstAttribute="top" secondItem="LKs-Io-BMe" secondAttribute="bottom" id="KVk-Gl-NeP"/>
                             <constraint firstAttribute="trailing" secondItem="Ozj-D9-M8A" secondAttribute="trailing" constant="28" id="Me3-Ur-hkF"/>
                             <constraint firstItem="0CM-RH-Tmx" firstAttribute="trailing" secondItem="7Pe-ZW-60V" secondAttribute="trailingMargin" id="MgI-GH-RyD"/>
-                            <constraint firstAttribute="trailing" secondItem="KdV-38-k6S" secondAttribute="trailing" id="b4G-i2-HLC"/>
                             <constraint firstItem="NTB-xC-a0y" firstAttribute="width" secondItem="hvv-aI-lBI" secondAttribute="width" id="bgM-Rx-MjC"/>
-                            <constraint firstItem="sie-EL-SqM" firstAttribute="top" secondItem="KdV-38-k6S" secondAttribute="bottom" constant="21" id="cwE-C4-9L6"/>
                             <constraint firstItem="Ozj-D9-M8A" firstAttribute="top" secondItem="LKs-Io-BMe" secondAttribute="bottom" constant="93" id="cyB-y2-igK"/>
-                            <constraint firstItem="Ozj-D9-M8A" firstAttribute="top" secondItem="KdV-38-k6S" secondAttribute="bottom" constant="120" id="fk7-JT-hTz"/>
                             <constraint firstItem="Ozj-D9-M8A" firstAttribute="leading" secondItem="7Pe-ZW-60V" secondAttribute="leading" constant="28" id="mLC-ii-Xdu"/>
                             <constraint firstItem="hvv-aI-lBI" firstAttribute="leading" secondItem="7Pe-ZW-60V" secondAttribute="leading" constant="28" id="oax-2R-o2F"/>
+                            <constraint firstItem="Ozj-D9-M8A" firstAttribute="top" secondItem="LKs-Io-BMe" secondAttribute="bottom" constant="120" id="on2-BY-fFm"/>
                             <constraint firstItem="sie-EL-SqM" firstAttribute="top" secondItem="LKs-Io-BMe" secondAttribute="bottom" constant="21" id="rck-sy-INa"/>
                             <constraint firstAttribute="trailing" secondItem="NTB-xC-a0y" secondAttribute="trailing" constant="28" id="uku-vc-alj"/>
-                            <constraint firstItem="0CM-RH-Tmx" firstAttribute="top" secondItem="KdV-38-k6S" secondAttribute="bottom" constant="21" id="xU4-Em-xKp"/>
                             <constraint firstItem="pui-Zh-6dD" firstAttribute="top" secondItem="NTB-xC-a0y" secondAttribute="bottom" constant="45" id="xuq-LQ-y2U"/>
                         </constraints>
                         <variation key="default">
@@ -114,7 +101,13 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="7R0-XT-EsQ"/>
+                    <navigationItem key="navigationItem" title="Racism" id="7R0-XT-EsQ">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                <color key="value" red="0.53725490196078429" green="0.62745098039215685" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
                     <connections>
                         <outlet property="questionLabel" destination="Ozj-D9-M8A" id="KCF-2f-ldm"/>
                         <outlet property="scoreLabel" destination="0CM-RH-Tmx" id="KQn-jr-an1"/>
@@ -124,7 +117,7 @@
             </objects>
             <point key="canvasLocation" x="2614" y="-292"/>
         </scene>
-        <!--Sexism View Controller-->
+        <!--Sexism-->
         <scene sceneID="C8r-zb-8n9">
             <objects>
                 <viewController id="Tip-2d-NMm" customClass="SexismViewController" customModule="Xeno" customModuleProvider="target" sceneMemberID="viewController">
@@ -165,7 +158,8 @@
                                 </state>
                                 <connections>
                                     <action selector="userAnsweredTrue" destination="EUF-V7-d0T" eventType="touchUpInside" id="81r-sT-mWs"/>
-                                    <segue destination="r85-gp-MsT" kind="push" identifier="sexismShowAnswerTrue" id="Hvu-GR-CTT"/>
+                                    <action selector="userAnsweredTrue" destination="Tip-2d-NMm" eventType="touchUpInside" id="izI-wr-aeo"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="sexismShowAnswerTrue" id="4Bg-eO-7ug"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irs-wj-ElR">
@@ -181,7 +175,8 @@
                                 </state>
                                 <connections>
                                     <action selector="userAnsweredFalse" destination="EUF-V7-d0T" eventType="touchUpInside" id="0vi-Aj-BiF"/>
-                                    <segue destination="r85-gp-MsT" kind="push" identifier="sexismShowAnswerFalse" id="yQU-YZ-dPl"/>
+                                    <action selector="userAnsweredFalse" destination="Tip-2d-NMm" eventType="touchUpInside" id="GoW-i4-RJ1"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="sexismShowAnswerFalse" id="TvL-6b-yDd"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="##" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sse-vI-0Nu">
@@ -190,46 +185,34 @@
                                 <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0i-0n-J13">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <color key="barTintColor" red="0.53725490200000003" green="0.62745098040000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="KannadaSangamMN-Bold" family="Kannada Sangam MN" pointSize="16"/>
-                                    <color key="textColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Sexism" id="QPL-rG-NaR"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="w0i-0n-J13" firstAttribute="top" secondItem="MS8-jB-OjG" secondAttribute="bottom" id="1LQ-20-aUo"/>
                             <constraint firstAttribute="trailing" secondItem="sse-vI-0Nu" secondAttribute="trailing" constant="16" id="2ho-sZ-fyE"/>
                             <constraint firstItem="1f9-LE-l5e" firstAttribute="leading" secondItem="cuU-9I-OBd" secondAttribute="leading" constant="28" id="Aak-2c-OOa"/>
-                            <constraint firstItem="w0i-0n-J13" firstAttribute="top" secondItem="MS8-jB-OjG" secondAttribute="bottom" id="CSx-Na-kxk"/>
                             <constraint firstItem="Pgx-gM-mrf" firstAttribute="top" secondItem="Irs-wj-ElR" secondAttribute="bottom" constant="45" id="Cbd-df-CSu"/>
-                            <constraint firstItem="w0i-0n-J13" firstAttribute="leading" secondItem="cuU-9I-OBd" secondAttribute="leading" id="PHG-qi-swV"/>
                             <constraint firstItem="sse-vI-0Nu" firstAttribute="leading" secondItem="hAy-Pq-DrP" secondAttribute="trailing" constant="2" id="TkU-m0-ZZ5"/>
                             <constraint firstItem="Pgx-gM-mrf" firstAttribute="top" secondItem="MDf-Fo-wPT" secondAttribute="bottom" constant="45" id="ZjR-lr-Hne"/>
                             <constraint firstItem="sse-vI-0Nu" firstAttribute="top" secondItem="MS8-jB-OjG" secondAttribute="bottom" constant="65" id="ZzD-hR-S7u"/>
                             <constraint firstItem="MDf-Fo-wPT" firstAttribute="leading" secondItem="cuU-9I-OBd" secondAttribute="leading" constant="28" id="bfA-8L-QTv"/>
-                            <constraint firstItem="1f9-LE-l5e" firstAttribute="top" secondItem="MS8-jB-OjG" secondAttribute="bottom" constant="164" id="bjc-ts-SU3"/>
+                            <constraint firstItem="1f9-LE-l5e" firstAttribute="top" secondItem="MS8-jB-OjG" secondAttribute="bottom" constant="120" id="bjc-ts-SU3"/>
                             <constraint firstAttribute="trailing" secondItem="Irs-wj-ElR" secondAttribute="trailing" constant="28" id="gOq-gI-oYs"/>
                             <constraint firstAttribute="centerX" secondItem="1f9-LE-l5e" secondAttribute="centerX" id="pLL-eA-20z"/>
+                            <constraint firstItem="sse-vI-0Nu" firstAttribute="top" secondItem="MS8-jB-OjG" secondAttribute="bottom" constant="21" id="qGS-9v-hv4"/>
                             <constraint firstItem="Irs-wj-ElR" firstAttribute="width" secondItem="MDf-Fo-wPT" secondAttribute="width" id="r77-YA-jVX"/>
                             <constraint firstAttribute="trailing" secondItem="1f9-LE-l5e" secondAttribute="trailing" constant="28" id="ryv-TE-9LG"/>
+                            <constraint firstItem="hAy-Pq-DrP" firstAttribute="top" secondItem="MS8-jB-OjG" secondAttribute="bottom" constant="21" id="sgl-pG-oMj"/>
                             <constraint firstItem="Irs-wj-ElR" firstAttribute="leading" secondItem="MDf-Fo-wPT" secondAttribute="trailing" constant="28" id="w6w-zR-kFX"/>
                             <constraint firstItem="hAy-Pq-DrP" firstAttribute="top" secondItem="MS8-jB-OjG" secondAttribute="bottom" constant="65" id="wQE-TV-vCe"/>
-                            <constraint firstAttribute="trailing" secondItem="w0i-0n-J13" secondAttribute="trailing" id="xja-2d-NhO"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="1LQ-20-aUo"/>
+                                <exclude reference="wQE-TV-vCe"/>
+                                <exclude reference="ZzD-hR-S7u"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="JuH-1J-UUM"/>
+                    <navigationItem key="navigationItem" title="Sexism" id="JuH-1J-UUM"/>
                     <connections>
                         <outlet property="questionLabel" destination="1f9-LE-l5e" id="pu8-c9-AqS"/>
                         <outlet property="scoreLabel" destination="sse-vI-0Nu" id="uER-c4-KkQ"/>
@@ -239,7 +222,7 @@
             </objects>
             <point key="canvasLocation" x="2614" y="408"/>
         </scene>
-        <!--Homotransphobia View Controller-->
+        <!--Homo/Transphobia-->
         <scene sceneID="Yff-d0-KfV">
             <objects>
                 <viewController id="2lU-Ra-XQ8" customClass="HomotransphobiaViewController" customModule="Xeno" customModuleProvider="target" sceneMemberID="viewController">
@@ -280,7 +263,8 @@
                                 </state>
                                 <connections>
                                     <action selector="userAnsweredTrue" destination="EUF-V7-d0T" eventType="touchUpInside" id="02n-n0-fZG"/>
-                                    <segue destination="r85-gp-MsT" kind="push" identifier="homotransphobiaShowAnswerTrue" id="ovd-7e-alY"/>
+                                    <action selector="userAnsweredTrue" destination="2lU-Ra-XQ8" eventType="touchUpInside" id="hqw-BJ-S7n"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="homotransphobiaShowAnswerTrue" id="73f-6h-8kL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oA3-mX-sSA">
@@ -296,7 +280,8 @@
                                 </state>
                                 <connections>
                                     <action selector="userAnsweredFalse" destination="EUF-V7-d0T" eventType="touchUpInside" id="l8C-CS-GrS"/>
-                                    <segue destination="r85-gp-MsT" kind="push" identifier="homotransphobiaShowAnswerFalse" id="2q4-Fa-6q6"/>
+                                    <action selector="userAnsweredFalse" destination="2lU-Ra-XQ8" eventType="touchUpInside" id="otA-Lq-NTV"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="homotransphobiaShowAnswerFalse" id="aHY-Xr-RE5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="##" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFr-v0-2qh">
@@ -305,40 +290,26 @@
                                 <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0j-oH-Kkr">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <color key="barTintColor" red="0.53725490200000003" green="0.62745098040000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="KannadaSangamMN-Bold" family="Kannada Sangam MN" pointSize="16"/>
-                                    <color key="textColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Homo/Transphobia" id="zDH-n1-u8l"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="JFr-v0-2qh" secondAttribute="trailing" constant="16" id="3hD-VA-z48"/>
                             <constraint firstItem="oA3-mX-sSA" firstAttribute="leading" secondItem="cMP-nL-u1C" secondAttribute="trailing" constant="28" id="6Yh-8m-Ny1"/>
-                            <constraint firstItem="JFr-v0-2qh" firstAttribute="top" secondItem="wGQ-YZ-FaX" secondAttribute="bottom" constant="65" id="9td-Cq-6zu"/>
+                            <constraint firstItem="JFr-v0-2qh" firstAttribute="top" secondItem="wGQ-YZ-FaX" secondAttribute="bottom" constant="21" id="9td-Cq-6zu"/>
                             <constraint firstItem="cMP-nL-u1C" firstAttribute="leading" secondItem="r8n-aL-Ehr" secondAttribute="leading" constant="28" id="A1r-0e-5z3"/>
-                            <constraint firstItem="t0j-oH-Kkr" firstAttribute="leading" secondItem="r8n-aL-Ehr" secondAttribute="leading" id="DPb-jN-wP2"/>
-                            <constraint firstItem="7nl-aG-LWf" firstAttribute="top" secondItem="wGQ-YZ-FaX" secondAttribute="bottom" constant="164" id="QD6-on-uAa"/>
+                            <constraint firstItem="7nl-aG-LWf" firstAttribute="top" secondItem="wGQ-YZ-FaX" secondAttribute="bottom" constant="120" id="QD6-on-uAa"/>
                             <constraint firstItem="umO-Gq-yZD" firstAttribute="top" secondItem="oA3-mX-sSA" secondAttribute="bottom" constant="45" id="QpC-sA-JoP"/>
                             <constraint firstAttribute="trailing" secondItem="7nl-aG-LWf" secondAttribute="trailing" constant="28" id="Tuv-Jf-4IY"/>
                             <constraint firstItem="umO-Gq-yZD" firstAttribute="top" secondItem="cMP-nL-u1C" secondAttribute="bottom" constant="45" id="XP5-ot-tbu"/>
                             <constraint firstAttribute="trailing" secondItem="oA3-mX-sSA" secondAttribute="trailing" constant="28" id="bPo-Rd-UFD"/>
                             <constraint firstItem="JFr-v0-2qh" firstAttribute="leading" secondItem="Ziq-49-Qag" secondAttribute="trailing" constant="2" id="bgE-hh-1uh"/>
-                            <constraint firstItem="t0j-oH-Kkr" firstAttribute="top" secondItem="wGQ-YZ-FaX" secondAttribute="bottom" id="dcf-cR-iCz"/>
-                            <constraint firstAttribute="trailing" secondItem="t0j-oH-Kkr" secondAttribute="trailing" id="fVp-b8-XSg"/>
                             <constraint firstItem="oA3-mX-sSA" firstAttribute="width" secondItem="cMP-nL-u1C" secondAttribute="width" id="gjA-up-OrK"/>
-                            <constraint firstItem="Ziq-49-Qag" firstAttribute="top" secondItem="wGQ-YZ-FaX" secondAttribute="bottom" constant="65" id="jPK-2v-kPL"/>
+                            <constraint firstItem="Ziq-49-Qag" firstAttribute="top" secondItem="wGQ-YZ-FaX" secondAttribute="bottom" constant="21" id="jPK-2v-kPL"/>
                             <constraint firstItem="7nl-aG-LWf" firstAttribute="leading" secondItem="r8n-aL-Ehr" secondAttribute="leading" constant="28" id="mEm-34-cFz"/>
                             <constraint firstAttribute="centerX" secondItem="7nl-aG-LWf" secondAttribute="centerX" id="mFs-Hr-9a0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="tDj-yL-y8F"/>
+                    <navigationItem key="navigationItem" title="Homo/Transphobia" id="tDj-yL-y8F"/>
                     <connections>
                         <outlet property="questionLabel" destination="7nl-aG-LWf" id="bf7-rh-q5e"/>
                         <outlet property="scoreLabel" destination="JFr-v0-2qh" id="LGW-AF-6Zd"/>
@@ -348,7 +319,7 @@
             </objects>
             <point key="canvasLocation" x="2614" y="1120"/>
         </scene>
-        <!--Religiocentrism View Controller-->
+        <!--Religiocentrism-->
         <scene sceneID="4Xx-Ik-NoO">
             <objects>
                 <viewController id="k3i-KZ-60a" customClass="ReligiocentrismViewController" customModule="Xeno" customModuleProvider="target" sceneMemberID="viewController">
@@ -388,8 +359,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="userAnsweredTrue" destination="k3i-KZ-60a" eventType="touchUpInside" id="K6a-Ac-g8g"/>
                                     <action selector="userAnsweredTrue" destination="EUF-V7-d0T" eventType="touchUpInside" id="kSk-pY-yk6"/>
-                                    <segue destination="r85-gp-MsT" kind="push" identifier="religiocentrismShowAnswerTrue" id="M1i-2Q-Mae"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="religiocentrismShowAnswerTrue" id="76K-J0-SGv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVp-K4-DcT">
@@ -404,8 +376,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="userAnsweredFalse" destination="k3i-KZ-60a" eventType="touchUpInside" id="vuc-MC-oQK"/>
                                     <action selector="userAnsweredFalse" destination="EUF-V7-d0T" eventType="touchUpInside" id="zNw-SW-Y4C"/>
-                                    <segue destination="r85-gp-MsT" kind="push" identifier="religiocentrismShowAnswerFalse" id="p7f-fO-nSj"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="religiocentrismShowAnswerFalse" id="Abt-VZ-hdi"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="##" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nH-jk-54d">
@@ -414,40 +387,26 @@
                                 <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2EN-jZ-BtH">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <color key="barTintColor" red="0.53725490200000003" green="0.62745098040000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="KannadaSangamMN-Bold" family="Kannada Sangam MN" pointSize="16"/>
-                                    <color key="textColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Religiocentrism" id="74p-rB-51N"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="2EN-jZ-BtH" firstAttribute="leading" secondItem="C9N-Kh-OYn" secondAttribute="leading" id="4GK-HP-yyU"/>
-                            <constraint firstItem="Im9-Yj-JIT" firstAttribute="top" secondItem="zMc-t5-E5C" secondAttribute="bottom" constant="65" id="8BX-2b-7td"/>
+                            <constraint firstItem="Im9-Yj-JIT" firstAttribute="top" secondItem="zMc-t5-E5C" secondAttribute="bottom" constant="21" id="8BX-2b-7td"/>
                             <constraint firstItem="xl7-xj-QMT" firstAttribute="leading" secondItem="C9N-Kh-OYn" secondAttribute="leading" constant="28" id="977-Ow-FJL"/>
-                            <constraint firstAttribute="trailing" secondItem="2EN-jZ-BtH" secondAttribute="trailing" id="FCX-vG-yEf"/>
                             <constraint firstAttribute="trailing" secondItem="6nH-jk-54d" secondAttribute="trailing" constant="16" id="Fcu-tH-dTP"/>
                             <constraint firstItem="vPJ-d5-5aj" firstAttribute="leading" secondItem="C9N-Kh-OYn" secondAttribute="leading" constant="28" id="Fgc-p8-n1N"/>
                             <constraint firstItem="sVp-K4-DcT" firstAttribute="leading" secondItem="xl7-xj-QMT" secondAttribute="trailing" constant="28" id="G7N-Ma-yVg"/>
                             <constraint firstAttribute="trailing" secondItem="sVp-K4-DcT" secondAttribute="trailing" constant="28" id="LSK-Eo-8rl"/>
                             <constraint firstItem="3rh-r7-czb" firstAttribute="top" secondItem="sVp-K4-DcT" secondAttribute="bottom" constant="45" id="MGA-fe-cHd"/>
-                            <constraint firstItem="vPJ-d5-5aj" firstAttribute="top" secondItem="zMc-t5-E5C" secondAttribute="bottom" constant="164" id="NKv-2A-Nng"/>
+                            <constraint firstItem="vPJ-d5-5aj" firstAttribute="top" secondItem="zMc-t5-E5C" secondAttribute="bottom" constant="120" id="NKv-2A-Nng"/>
                             <constraint firstItem="sVp-K4-DcT" firstAttribute="width" secondItem="xl7-xj-QMT" secondAttribute="width" id="VqQ-Di-sfW"/>
-                            <constraint firstItem="2EN-jZ-BtH" firstAttribute="top" secondItem="zMc-t5-E5C" secondAttribute="bottom" id="Zi9-Is-gik"/>
                             <constraint firstItem="3rh-r7-czb" firstAttribute="top" secondItem="xl7-xj-QMT" secondAttribute="bottom" constant="45" id="Zmj-6B-ZM3"/>
                             <constraint firstAttribute="centerX" secondItem="vPJ-d5-5aj" secondAttribute="centerX" id="bEr-T0-hnD"/>
-                            <constraint firstItem="6nH-jk-54d" firstAttribute="top" secondItem="zMc-t5-E5C" secondAttribute="bottom" constant="65" id="kZq-EO-7vb"/>
+                            <constraint firstItem="6nH-jk-54d" firstAttribute="top" secondItem="zMc-t5-E5C" secondAttribute="bottom" constant="21" id="kZq-EO-7vb"/>
                             <constraint firstItem="6nH-jk-54d" firstAttribute="leading" secondItem="Im9-Yj-JIT" secondAttribute="trailing" constant="2" id="tnU-IM-W8D"/>
                             <constraint firstAttribute="trailing" secondItem="vPJ-d5-5aj" secondAttribute="trailing" constant="28" id="ud6-wZ-Gzu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="w6c-Qd-ETc"/>
+                    <navigationItem key="navigationItem" title="Religiocentrism" id="w6c-Qd-ETc"/>
                     <connections>
                         <outlet property="questionLabel" destination="vPJ-d5-5aj" id="aZU-PQ-jcd"/>
                         <outlet property="scoreLabel" destination="6nH-jk-54d" id="Nl8-Vd-9Ye"/>
@@ -457,7 +416,7 @@
             </objects>
             <point key="canvasLocation" x="2614" y="1826"/>
         </scene>
-        <!--Ableism View Controller-->
+        <!--Ableism-->
         <scene sceneID="urp-qE-dZe">
             <objects>
                 <viewController id="KDx-J6-SZV" customClass="AbleismViewController" customModule="Xeno" customModuleProvider="target" sceneMemberID="viewController">
@@ -469,7 +428,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Question Text" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iuq-OB-96g">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iuq-OB-96g">
                                 <rect key="frame" x="28" y="184" width="544" height="21"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -497,8 +456,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="userAnsweredTrue" destination="KDx-J6-SZV" eventType="touchUpInside" id="YD7-Dh-BcD"/>
                                     <action selector="userAnsweredTrue" destination="EUF-V7-d0T" eventType="touchUpInside" id="jry-H6-4fe"/>
-                                    <segue destination="r85-gp-MsT" kind="push" identifier="ableismShowAnswerTrue" id="n3D-zf-aWB"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="ableismShowAnswerTrue" id="CFA-rz-Pdb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRd-pp-QjD">
@@ -514,7 +474,8 @@
                                 </state>
                                 <connections>
                                     <action selector="userAnsweredFalse" destination="EUF-V7-d0T" eventType="touchUpInside" id="KSO-xb-5di"/>
-                                    <segue destination="r85-gp-MsT" kind="push" identifier="ableismShowAnswerFalse" id="ku7-Y1-VAm"/>
+                                    <action selector="userAnsweredFalse" destination="KDx-J6-SZV" eventType="touchUpInside" id="Nmo-UI-zxz"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="ableismShowAnswerFalse" id="drr-XI-xb6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="##" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYN-SP-ANx">
@@ -523,40 +484,26 @@
                                 <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PSn-jo-7vo">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <color key="barTintColor" red="0.53725490200000003" green="0.62745098040000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="KannadaSangamMN-Bold" family="Kannada Sangam MN" pointSize="16"/>
-                                    <color key="textColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Ableism" id="HTj-pa-Euw"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="vo7-Ha-Fgo" firstAttribute="top" secondItem="wTC-wT-nUk" secondAttribute="bottom" constant="65" id="1lI-ts-aQK"/>
+                            <constraint firstItem="vo7-Ha-Fgo" firstAttribute="top" secondItem="wTC-wT-nUk" secondAttribute="bottom" constant="21" id="1lI-ts-aQK"/>
                             <constraint firstItem="Iuq-OB-96g" firstAttribute="leading" secondItem="ysW-hS-l7a" secondAttribute="leading" constant="28" id="5Tv-TR-WM0"/>
-                            <constraint firstItem="SYN-SP-ANx" firstAttribute="top" secondItem="wTC-wT-nUk" secondAttribute="bottom" constant="65" id="Bvs-zg-htS"/>
+                            <constraint firstItem="SYN-SP-ANx" firstAttribute="top" secondItem="wTC-wT-nUk" secondAttribute="bottom" constant="21" id="Bvs-zg-htS"/>
                             <constraint firstItem="SYN-SP-ANx" firstAttribute="leading" secondItem="vo7-Ha-Fgo" secondAttribute="trailing" constant="2" id="F1T-g8-M9Z"/>
                             <constraint firstItem="xbb-wf-bqV" firstAttribute="top" secondItem="mRd-pp-QjD" secondAttribute="bottom" constant="45" id="FpJ-Sf-NCM"/>
                             <constraint firstItem="mRd-pp-QjD" firstAttribute="width" secondItem="945-94-9gD" secondAttribute="width" id="Gkm-5i-OKf"/>
                             <constraint firstAttribute="centerX" secondItem="Iuq-OB-96g" secondAttribute="centerX" id="H08-FJ-v8f"/>
-                            <constraint firstItem="Iuq-OB-96g" firstAttribute="top" secondItem="wTC-wT-nUk" secondAttribute="bottom" constant="164" id="Rbe-9P-am3"/>
-                            <constraint firstItem="PSn-jo-7vo" firstAttribute="leading" secondItem="ysW-hS-l7a" secondAttribute="leading" id="Yfl-UE-JBZ"/>
+                            <constraint firstItem="Iuq-OB-96g" firstAttribute="top" secondItem="wTC-wT-nUk" secondAttribute="bottom" constant="120" id="Rbe-9P-am3"/>
                             <constraint firstItem="mRd-pp-QjD" firstAttribute="leading" secondItem="945-94-9gD" secondAttribute="trailing" constant="28" id="dqV-fh-n9J"/>
                             <constraint firstItem="945-94-9gD" firstAttribute="leading" secondItem="ysW-hS-l7a" secondAttribute="leading" constant="28" id="iMd-D6-eY8"/>
                             <constraint firstAttribute="trailing" secondItem="SYN-SP-ANx" secondAttribute="trailing" constant="16" id="lC8-uh-emS"/>
                             <constraint firstItem="xbb-wf-bqV" firstAttribute="top" secondItem="945-94-9gD" secondAttribute="bottom" constant="45" id="lCr-oo-qNR"/>
-                            <constraint firstAttribute="trailing" secondItem="PSn-jo-7vo" secondAttribute="trailing" id="lbu-h7-oYJ"/>
                             <constraint firstAttribute="trailing" secondItem="Iuq-OB-96g" secondAttribute="trailing" constant="28" id="o22-yw-fOI"/>
                             <constraint firstAttribute="trailing" secondItem="mRd-pp-QjD" secondAttribute="trailing" constant="28" id="rQ7-3W-Wr5"/>
-                            <constraint firstItem="PSn-jo-7vo" firstAttribute="top" secondItem="wTC-wT-nUk" secondAttribute="bottom" id="rbZ-sU-MVh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="TFX-0r-ebS"/>
+                    <navigationItem key="navigationItem" title="Ableism" id="TFX-0r-ebS"/>
                     <connections>
                         <outlet property="questionLabel" destination="Iuq-OB-96g" id="6el-KR-c4S"/>
                         <outlet property="scoreLabel" destination="SYN-SP-ANx" id="t5g-NZ-7QW"/>
@@ -566,7 +513,7 @@
             </objects>
             <point key="canvasLocation" x="2614" y="2564"/>
         </scene>
-        <!--Answer View Controller-->
+        <!--Answer-->
         <scene sceneID="o2p-GD-6gN">
             <objects>
                 <viewController id="r85-gp-MsT" customClass="AnswerViewController" customModule="Xeno" customModuleProvider="target" sceneMemberID="viewController">
@@ -575,43 +522,14 @@
                         <viewControllerLayoutGuide type="bottom" id="zWu-6F-dNn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Rsv-ga-aEk">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Response (True or False)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sat-xM-qwz">
-                                <rect key="frame" x="180" y="366" width="241" height="21"/>
-                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLV-ng-AuF">
-                                <rect key="frame" x="28" y="473" width="544" height="40"/>
-                                <color key="backgroundColor" red="0.53725490200000003" green="0.62745098040000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="X7P-ns-bMk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
-                                <state key="normal" title="Next Question">
-                                    <color key="titleColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="EUF-V7-d0T" kind="show" identifier="showRacismViewController" id="8HM-2w-qsN"/>
-                                </connections>
-                            </button>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPR-O5-sgQ">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <color key="barTintColor" red="0.53725490200000003" green="0.62745098040000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="KannadaSangamMN-Bold" family="Kannada Sangam MN" pointSize="16"/>
-                                    <color key="textColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Answer" id="0Xm-OC-gI5"/>
-                                </items>
-                            </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJj-7I-Xq0">
                                 <rect key="frame" x="495" y="78" width="54" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="2Nj-zt-ghQ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -628,34 +546,38 @@
                                 <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sat-xM-qwz">
+                                <rect key="frame" x="169" y="427" width="263" height="60"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="40"/>
+                                <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="zWu-6F-dNn" firstAttribute="top" secondItem="XLV-ng-AuF" secondAttribute="bottom" constant="45" id="0h8-Sd-Upl"/>
                             <constraint firstAttribute="centerX" secondItem="eP6-i8-gUL" secondAttribute="centerX" id="4zF-hN-f7Y"/>
-                            <constraint firstItem="eP6-i8-gUL" firstAttribute="top" secondItem="GPR-O5-sgQ" secondAttribute="bottom" constant="120" id="BFa-WZ-MjR"/>
-                            <constraint firstItem="WJj-7I-Xq0" firstAttribute="top" secondItem="GPR-O5-sgQ" secondAttribute="bottom" constant="21" id="I5j-uK-Qah"/>
-                            <constraint firstItem="XLV-ng-AuF" firstAttribute="leading" secondItem="Rsv-ga-aEk" secondAttribute="leading" constant="28" id="JI8-P3-IGk"/>
-                            <constraint firstItem="N9u-fu-IhZ" firstAttribute="top" secondItem="GPR-O5-sgQ" secondAttribute="bottom" constant="21" id="KNu-Go-vnp"/>
+                            <constraint firstItem="N9u-fu-IhZ" firstAttribute="leading" secondItem="WJj-7I-Xq0" secondAttribute="trailing" constant="2" id="7wi-iI-KQd"/>
+                            <constraint firstItem="zWu-6F-dNn" firstAttribute="top" secondItem="sat-xM-qwz" secondAttribute="bottom" constant="45" id="9uL-jh-1yG"/>
+                            <constraint firstItem="sat-xM-qwz" firstAttribute="top" secondItem="BGP-ei-SBt" secondAttribute="bottom" constant="305" id="Owo-n6-NhQ"/>
                             <constraint firstAttribute="trailing" secondItem="WJj-7I-Xq0" secondAttribute="trailing" constant="47" id="WFU-ZU-U7s"/>
                             <constraint firstAttribute="trailing" secondItem="eP6-i8-gUL" secondAttribute="trailing" constant="28" id="Yoh-oM-m2J"/>
-                            <constraint firstItem="GPR-O5-sgQ" firstAttribute="leading" secondItem="Rsv-ga-aEk" secondAttribute="leading" id="cDO-EF-jMW"/>
-                            <constraint firstItem="sat-xM-qwz" firstAttribute="top" secondItem="GPR-O5-sgQ" secondAttribute="bottom" constant="322" id="g0L-1h-dDP"/>
+                            <constraint firstItem="N9u-fu-IhZ" firstAttribute="top" secondItem="BGP-ei-SBt" secondAttribute="bottom" constant="21" id="exb-yb-tlA"/>
                             <constraint firstAttribute="trailing" secondItem="N9u-fu-IhZ" secondAttribute="trailing" constant="16" id="h5U-Li-xlQ"/>
-                            <constraint firstAttribute="trailing" secondItem="XLV-ng-AuF" secondAttribute="trailing" constant="28" id="hhI-aR-BnH"/>
+                            <constraint firstItem="WJj-7I-Xq0" firstAttribute="top" secondItem="BGP-ei-SBt" secondAttribute="bottom" constant="21" id="iSw-zJ-RwC"/>
                             <constraint firstAttribute="centerX" secondItem="sat-xM-qwz" secondAttribute="centerX" id="mym-vk-WmQ"/>
-                            <constraint firstItem="XLV-ng-AuF" firstAttribute="top" secondItem="GPR-O5-sgQ" secondAttribute="bottom" constant="430" id="nHT-CQ-s9N"/>
                             <constraint firstItem="eP6-i8-gUL" firstAttribute="leading" secondItem="Rsv-ga-aEk" secondAttribute="leading" constant="28" id="o61-ny-l1T"/>
-                            <constraint firstAttribute="trailing" secondItem="GPR-O5-sgQ" secondAttribute="trailing" id="sfx-hi-7Kn"/>
-                            <constraint firstItem="GPR-O5-sgQ" firstAttribute="top" secondItem="BGP-ei-SBt" secondAttribute="bottom" id="xtX-p8-WcQ"/>
+                            <constraint firstItem="eP6-i8-gUL" firstAttribute="top" secondItem="BGP-ei-SBt" secondAttribute="bottom" constant="120" id="ukw-Qs-Bsv"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="nHT-CQ-s9N"/>
+                                <exclude reference="Owo-n6-NhQ"/>
+                                <exclude reference="WFU-ZU-U7s"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="rrr-PZ-Y5Z"/>
+                    <navigationItem key="navigationItem" title="Answer" id="rrr-PZ-Y5Z" userLabel="Answer">
+                        <barButtonItem key="backBarButtonItem" title="Next Question" id="lnt-4h-q5X"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="answerLabel" destination="sat-xM-qwz" id="VtN-HU-TP6"/>
                         <outlet property="questionLabel" destination="eP6-i8-gUL" id="Nrm-hw-Vdj"/>
@@ -664,19 +586,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ocx-w2-n0J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3547" y="1120"/>
+            <point key="canvasLocation" x="3414" y="2564"/>
         </scene>
         <!--Racism-->
         <scene sceneID="5xv-md-Dxc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="gJS-pE-LDq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Racism" image="Racism Icon" id="V2E-fj-9eW"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gJS-pE-LDq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Racism" image="Racism Icon" id="V2E-fj-9eW">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                <color key="value" red="0.53725490196078429" green="0.62745098039215685" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Ezh-MH-wxU"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qXA-2F-43O">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                            <color key="value" red="0.53725490196078429" green="0.62745098039215685" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="EUF-V7-d0T" kind="relationship" relationship="rootViewController" id="gCb-T6-qQ6"/>
                     </connections>
@@ -695,6 +629,11 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                            <color key="value" red="0.53725490196078429" green="0.62745098039215685" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="gJS-pE-LDq" kind="relationship" relationship="viewControllers" id="2xr-Kt-aHn"/>
                         <segue destination="lXv-eg-Il4" kind="relationship" relationship="viewControllers" id="vZt-OJ-Z3u"/>
@@ -710,7 +649,7 @@
         <!--Sexism-->
         <scene sceneID="5Ui-je-lj3">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="lXv-eg-Il4" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lXv-eg-Il4" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Sexism" image="Sexism Icon" id="Pno-vH-hNB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="L5h-IP-rHA">
@@ -729,7 +668,7 @@
         <!--Homotransphobia-->
         <scene sceneID="APc-Qx-W8i">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="En1-dI-RV8" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="En1-dI-RV8" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Homotransphobia" image="Homotransphobia Icon" id="Spq-0b-3W6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="16q-zD-vDq">
@@ -748,7 +687,7 @@
         <!--Religiocentrism-->
         <scene sceneID="p8x-4D-G09">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ykD-5o-9xq" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ykD-5o-9xq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Religiocentrism" image="Religiocentrism Icon" id="iPu-tJ-gR9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rBC-Ww-7Ia">
@@ -767,7 +706,7 @@
         <!--Ableism-->
         <scene sceneID="iru-B6-yJX">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="aSW-EB-8th" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aSW-EB-8th" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Ableism" image="Ableism Icon" id="MDi-8F-nsU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aSU-Pi-afH">
@@ -792,8 +731,7 @@
         <image name="Sexism Icon" width="29" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="n3D-zf-aWB"/>
-        <segue reference="gCb-T6-qQ6"/>
+        <segue reference="nr5-8e-N4u"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" red="0.53725490200000003" green="0.62745098040000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" red="1" green="1" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
 </document>
