@@ -14,7 +14,8 @@ class QuestionSet {
     
     let racismQuestionsData = [
         "Racism consists of ideologies and practices that seek to justify, or cause, the unequal distribution of privileges or rights among different racial groups." : true,
-        "White privilege is a term that applies to people of visible minority status who try to pass as “white." : true,
+        "White privilege is a term that applies to people of visible minority status who try to pass as white." : true,
+        "White privilege refers to the affordances that society gives white people that it doesn't give people of color as often, if ever." : true,
         "Internalized dominance refers to the ways that white people learn they are normal, and do not think of themselves as “other.”" : true,
         "There is no difference between individual and institutional discrimination." : false,
         "Polite racism is racism that is thinly veiled by seemingly harmless compliments which are really more like insults." : true,
@@ -23,7 +24,7 @@ class QuestionSet {
         "Privilege is defined as 'the principle or condition of enjoying special rights or immunities.'" : true,
         "Another term for majority group is dominant group, whereas another term for minority group is subordinate group." : true,
         "Prejudice refers to a set of negative attitudes toward members of another group simply because they are members of that group." : true,
-        "Racism comes from expulsion and persecution." : false,
+        "Racism comes from colonization and slavery." : true,
         "The process of social interaction that contains specific messages and practices concerning the nature of one's racial or ethnic status is referred to as racial socialization." : true,
         "A functionalist concept that emphasizes the coexistence of diverse racialized/ethnic groups with separate identities and cultures within a society is ethnic pluralism." : true,
         "The theory of racial formation is based on the assumption that the government substantially defines racial and ethnic relations." : true,
@@ -43,7 +44,11 @@ class QuestionSet {
         "People with black-sounding names are 50% less likely to be contacted after giving their resume to an employer than people with white-sounding names with the same exact resume." : true,
         "Blackface originated from white actors who would dress up and act as black people because black people were not allowed on stage." : true,
         "Cultural appropriation occurs when you cherry-pick bits and pieces of a culture that is not your own that you like, while stripping those pieces of culture from their original context and meaning within that culture." : true,
-        "You cannot appreciate a culture that is not your own without contributing to cultural appropriation." : false
+        "You cannot appreciate a culture that is not your own without contributing to cultural appropriation." : false,
+        "Dressing up as a geisha for Halloween is offensive if you are not Japanese because by dressing up as a traditionally submissive character, you are appropriating stereotypes that Japanese women then have to live with every day." : true,
+        "Wearing a Native American headdress either for Halloween or to a sporting event when you are not Native American is an example of cultural appropriation because the headdress is worn by worthy elder Native Americans as a symbol of leadership status and respect, but if you wear it outside of that context that meaning is lost." : true,
+        "Buying a purse of a Native American style that was made by a Native American artist because you like it and want to support the artist's work while you are not Native American yourself is an example of cultural appropriation." : false,
+        "Someone who is not Mexican wearing a sombrero on Cinco de Mayo while they go out partying is an example of cultural appreciation." : false
     ]
     
     let sexismQuestionsData = [
@@ -65,8 +70,9 @@ class QuestionSet {
         "Body-shaming (ie. fat shaming or skinny shaming) and slut-shaming can be detrimental to women, and can cause them to develop low self-esteem, low self-respect, self-mutilative behaviors, or eating disorders." : true,
         "When companies Photoshop pictures of women in order to make them look more 'ideal,' they are appropriating an impossible standard of beauty that causes women to feel inferior and ashamed because they do not conform to that impossible standard." : true,
         "When men are shown photos of women who have been Photoshopped, they get conditioned to think that that's what women should look like, and therefore judge real women more harshly." : true,
-        "On average, women in the U.S. spend $12,000 - $15,000 on beauty products and salon services per year. This is oftentimes more money than they will spend on their education per year." : true,
-        "According to the American Psychological Association, self-objectification has become a national epidemic that has negative consequences for women, including feelings of shame, anxiety and disgust." : true,
+        "On average, women in the U.S. spend $12,000 - $15,000 on beauty products and salon services per year." : true,
+        "Women will oftentimes spend more money on beauty products and salon services than they will spend on their education per year." : true,
+        "Self-objectification has become a national epidemic that has negative consequences for women, including feelings of shame, anxiety and disgust." : true,
         "Feminism is the movement that advocates political, economical, and social equality of the sexes." : true,
         "Feminism advocates that women should be superior to men." : false,
         "Women make up 51% of the U.S. population, yet only comprise 17% of Congress." : true,
@@ -80,6 +86,7 @@ class QuestionSet {
         "Women and girls are portrayed in news stories about 40% of the time." : false,
         "The representation of women in the media is heavily tied to capitalism." : true,
         "Oftentimes, men are not taught how to express emotion in healthy ways." : true,
+        "One in three women on college campuses will experience sexual assault or domestic violence while attending their university." : true,
     ]
     
     let homotransphobiaQuestionsData = [
@@ -149,7 +156,7 @@ class QuestionSet {
     ]
     
     let religiocentrismQuestionsData = [
-        "Anti-Semitism comes from colonization and slavery." : false,
+        "Anti-Semitism comes from expulsion and persecution." : true,
         "Christian conformity refers to a pattern of assimilation whereby members of subordinate racial-ethnic groups are expected to conform to the culture of the dominant (white) Anglo-Saxon population." : false,
         "Religiocentrism is defined as the conviction that a person's own religion is more important or superior to other religions." : true,
         "A religion is an organized collection of beliefs, cultural systems, and world views that relate humanity to an order of existence." : true,
@@ -195,7 +202,11 @@ class QuestionSet {
         "The Holocaust is a myth." : false,
         "The Muslim religion teaches terrorism." : false,
         "Some Muslim women wear a hijab because they are oppressed." : false,
-        "It is a women's choice if they want to wear a hijab or not." : true
+        "It is a woman's choice if they want to wear a hijab or not." : true,
+        "Taking the Lord's name in vein is okay to do around Christian people, even if they tell you they are offended by it." : false,
+        "Exclaiming things like 'Oh my God!' or 'Jesus Christ!' outside of a Christian or religious context could be considered 'taking God or the Lord's name in vein' according to Christian people." : true,
+        "In general, neither Muslim nor Jewish people have religious dietary restrictions." : false,
+        "If someone identifies as being a part of a certain religion, that means they must follow every single rule of that religion all the time." : false
     ]
     
     let ableismQuestionsData = [

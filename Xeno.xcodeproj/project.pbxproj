@@ -17,6 +17,10 @@
 		74D031DF1C15F950005974EF /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D031DE1C15F950005974EF /* AnswerViewController.swift */; };
 		74D031E11C160B6E005974EF /* questionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D031E01C160B6E005974EF /* questionSet.swift */; };
 		74D031E31C162B32005974EF /* game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D031E21C162B32005974EF /* game.swift */; };
+		74D031E51C190D99005974EF /* SexismViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D031E41C190D99005974EF /* SexismViewController.swift */; };
+		74D031E71C1947F8005974EF /* HomotransphobiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D031E61C1947F8005974EF /* HomotransphobiaViewController.swift */; };
+		74D031E91C19534F005974EF /* ReligiocentrismViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D031E81C19534F005974EF /* ReligiocentrismViewController.swift */; };
+		74D031EB1C195A91005974EF /* AbleismViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D031EA1C195A91005974EF /* AbleismViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		74D031DE1C15F950005974EF /* AnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 		74D031E01C160B6E005974EF /* questionSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = questionSet.swift; sourceTree = "<group>"; };
 		74D031E21C162B32005974EF /* game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = game.swift; sourceTree = "<group>"; };
+		74D031E41C190D99005974EF /* SexismViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SexismViewController.swift; sourceTree = "<group>"; };
+		74D031E61C1947F8005974EF /* HomotransphobiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomotransphobiaViewController.swift; sourceTree = "<group>"; };
+		74D031E81C19534F005974EF /* ReligiocentrismViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReligiocentrismViewController.swift; sourceTree = "<group>"; };
+		74D031EA1C195A91005974EF /* AbleismViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbleismViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,10 @@
 			children = (
 				74B1A5361C0FD4C000C8190D /* AppDelegate.swift */,
 				74B1A5381C0FD4C000C8190D /* RacismViewController.swift */,
+				74D031E41C190D99005974EF /* SexismViewController.swift */,
+				74D031E61C1947F8005974EF /* HomotransphobiaViewController.swift */,
+				74D031E81C19534F005974EF /* ReligiocentrismViewController.swift */,
+				74D031EA1C195A91005974EF /* AbleismViewController.swift */,
 				74D031DE1C15F950005974EF /* AnswerViewController.swift */,
 				74B1A53A1C0FD4C100C8190D /* Main.storyboard */,
 				74B1A53D1C0FD4C100C8190D /* Images.xcassets */,
@@ -224,11 +236,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D031E51C190D99005974EF /* SexismViewController.swift in Sources */,
 				74D031E11C160B6E005974EF /* questionSet.swift in Sources */,
 				74D031E31C162B32005974EF /* game.swift in Sources */,
+				74D031E71C1947F8005974EF /* HomotransphobiaViewController.swift in Sources */,
 				74B1A5391C0FD4C000C8190D /* RacismViewController.swift in Sources */,
 				74D031DF1C15F950005974EF /* AnswerViewController.swift in Sources */,
+				74D031EB1C195A91005974EF /* AbleismViewController.swift in Sources */,
 				74B1A5371C0FD4C000C8190D /* AppDelegate.swift in Sources */,
+				74D031E91C19534F005974EF /* ReligiocentrismViewController.swift in Sources */,
 				74B1A5571C0FDB6300C8190D /* question.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -46,7 +46,7 @@
                                 </state>
                                 <connections>
                                     <action selector="userAnsweredTrue" destination="EUF-V7-d0T" eventType="touchUpInside" id="dhD-Z5-J77"/>
-                                    <segue destination="r85-gp-MsT" kind="push" identifier="showAnswerTrue" id="cnU-aX-e2x"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="racismShowAnswerTrue" id="cnU-aX-e2x"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTB-xC-a0y">
@@ -62,7 +62,7 @@
                                 </state>
                                 <connections>
                                     <action selector="userAnsweredFalse" destination="EUF-V7-d0T" eventType="touchUpInside" id="NgF-Sz-rhP"/>
-                                    <segue destination="r85-gp-MsT" kind="push" identifier="showAnswerFalse" id="zAM-Yr-kiq"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="racismShowAnswerFalse" id="zAM-Yr-kiq"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="##" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CM-RH-Tmx">
@@ -124,6 +124,448 @@
             </objects>
             <point key="canvasLocation" x="2614" y="-292"/>
         </scene>
+        <!--Sexism View Controller-->
+        <scene sceneID="C8r-zb-8n9">
+            <objects>
+                <viewController id="Tip-2d-NMm" customClass="SexismViewController" customModule="Xeno" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MS8-jB-OjG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pgx-gM-mrf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cuU-9I-OBd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1f9-LE-l5e">
+                                <rect key="frame" x="28" y="184" width="544" height="21"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAy-Pq-DrP">
+                                <rect key="frame" x="501" y="85" width="54" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="EFp-A1-02b"/>
+                                    <constraint firstAttribute="width" constant="54" id="Ejf-x0-U6g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDf-Fo-wPT">
+                                <rect key="frame" x="28" y="468" width="240" height="40"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.78039215689999997" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Y6S-ZE-FRa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="True">
+                                    <color key="titleColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="userAnsweredTrue" destination="EUF-V7-d0T" eventType="touchUpInside" id="81r-sT-mWs"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="sexismShowAnswerTrue" id="Hvu-GR-CTT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irs-wj-ElR">
+                                <rect key="frame" x="332" y="468" width="240" height="40"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.30980392159999998" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gqD-J0-h2b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="False">
+                                    <color key="titleColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="userAnsweredFalse" destination="EUF-V7-d0T" eventType="touchUpInside" id="0vi-Aj-BiF"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="sexismShowAnswerFalse" id="yQU-YZ-dPl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="##" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sse-vI-0Nu">
+                                <rect key="frame" x="557" y="85" width="27" height="21"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0i-0n-J13">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" red="0.53725490200000003" green="0.62745098040000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="KannadaSangamMN-Bold" family="Kannada Sangam MN" pointSize="16"/>
+                                    <color key="textColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Sexism" id="QPL-rG-NaR"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="w0i-0n-J13" firstAttribute="top" secondItem="MS8-jB-OjG" secondAttribute="bottom" id="1LQ-20-aUo"/>
+                            <constraint firstAttribute="trailing" secondItem="sse-vI-0Nu" secondAttribute="trailing" constant="16" id="2ho-sZ-fyE"/>
+                            <constraint firstItem="1f9-LE-l5e" firstAttribute="leading" secondItem="cuU-9I-OBd" secondAttribute="leading" constant="28" id="Aak-2c-OOa"/>
+                            <constraint firstItem="w0i-0n-J13" firstAttribute="top" secondItem="MS8-jB-OjG" secondAttribute="bottom" id="CSx-Na-kxk"/>
+                            <constraint firstItem="Pgx-gM-mrf" firstAttribute="top" secondItem="Irs-wj-ElR" secondAttribute="bottom" constant="45" id="Cbd-df-CSu"/>
+                            <constraint firstItem="w0i-0n-J13" firstAttribute="leading" secondItem="cuU-9I-OBd" secondAttribute="leading" id="PHG-qi-swV"/>
+                            <constraint firstItem="sse-vI-0Nu" firstAttribute="leading" secondItem="hAy-Pq-DrP" secondAttribute="trailing" constant="2" id="TkU-m0-ZZ5"/>
+                            <constraint firstItem="Pgx-gM-mrf" firstAttribute="top" secondItem="MDf-Fo-wPT" secondAttribute="bottom" constant="45" id="ZjR-lr-Hne"/>
+                            <constraint firstItem="sse-vI-0Nu" firstAttribute="top" secondItem="MS8-jB-OjG" secondAttribute="bottom" constant="65" id="ZzD-hR-S7u"/>
+                            <constraint firstItem="MDf-Fo-wPT" firstAttribute="leading" secondItem="cuU-9I-OBd" secondAttribute="leading" constant="28" id="bfA-8L-QTv"/>
+                            <constraint firstItem="1f9-LE-l5e" firstAttribute="top" secondItem="MS8-jB-OjG" secondAttribute="bottom" constant="164" id="bjc-ts-SU3"/>
+                            <constraint firstAttribute="trailing" secondItem="Irs-wj-ElR" secondAttribute="trailing" constant="28" id="gOq-gI-oYs"/>
+                            <constraint firstAttribute="centerX" secondItem="1f9-LE-l5e" secondAttribute="centerX" id="pLL-eA-20z"/>
+                            <constraint firstItem="Irs-wj-ElR" firstAttribute="width" secondItem="MDf-Fo-wPT" secondAttribute="width" id="r77-YA-jVX"/>
+                            <constraint firstAttribute="trailing" secondItem="1f9-LE-l5e" secondAttribute="trailing" constant="28" id="ryv-TE-9LG"/>
+                            <constraint firstItem="Irs-wj-ElR" firstAttribute="leading" secondItem="MDf-Fo-wPT" secondAttribute="trailing" constant="28" id="w6w-zR-kFX"/>
+                            <constraint firstItem="hAy-Pq-DrP" firstAttribute="top" secondItem="MS8-jB-OjG" secondAttribute="bottom" constant="65" id="wQE-TV-vCe"/>
+                            <constraint firstAttribute="trailing" secondItem="w0i-0n-J13" secondAttribute="trailing" id="xja-2d-NhO"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1LQ-20-aUo"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="JuH-1J-UUM"/>
+                    <connections>
+                        <outlet property="questionLabel" destination="1f9-LE-l5e" id="pu8-c9-AqS"/>
+                        <outlet property="scoreLabel" destination="sse-vI-0Nu" id="uER-c4-KkQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sFq-aY-SOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2614" y="408"/>
+        </scene>
+        <!--Homotransphobia View Controller-->
+        <scene sceneID="Yff-d0-KfV">
+            <objects>
+                <viewController id="2lU-Ra-XQ8" customClass="HomotransphobiaViewController" customModule="Xeno" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wGQ-YZ-FaX"/>
+                        <viewControllerLayoutGuide type="bottom" id="umO-Gq-yZD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r8n-aL-Ehr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nl-aG-LWf">
+                                <rect key="frame" x="28" y="184" width="544" height="21"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ziq-49-Qag">
+                                <rect key="frame" x="501" y="85" width="54" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Thf-i2-wD9"/>
+                                    <constraint firstAttribute="width" constant="54" id="U62-Am-eyp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMP-nL-u1C">
+                                <rect key="frame" x="28" y="466" width="258" height="40"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.78039215689999997" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DDG-h0-MwS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="True">
+                                    <color key="titleColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="userAnsweredTrue" destination="EUF-V7-d0T" eventType="touchUpInside" id="02n-n0-fZG"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="homotransphobiaShowAnswerTrue" id="ovd-7e-alY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oA3-mX-sSA">
+                                <rect key="frame" x="314" y="466" width="258" height="40"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.30980392159999998" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="G1s-CL-htN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="False">
+                                    <color key="titleColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="userAnsweredFalse" destination="EUF-V7-d0T" eventType="touchUpInside" id="l8C-CS-GrS"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="homotransphobiaShowAnswerFalse" id="2q4-Fa-6q6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="##" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFr-v0-2qh">
+                                <rect key="frame" x="557" y="85" width="27" height="21"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0j-oH-Kkr">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" red="0.53725490200000003" green="0.62745098040000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="KannadaSangamMN-Bold" family="Kannada Sangam MN" pointSize="16"/>
+                                    <color key="textColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Homo/Transphobia" id="zDH-n1-u8l"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JFr-v0-2qh" secondAttribute="trailing" constant="16" id="3hD-VA-z48"/>
+                            <constraint firstItem="oA3-mX-sSA" firstAttribute="leading" secondItem="cMP-nL-u1C" secondAttribute="trailing" constant="28" id="6Yh-8m-Ny1"/>
+                            <constraint firstItem="JFr-v0-2qh" firstAttribute="top" secondItem="wGQ-YZ-FaX" secondAttribute="bottom" constant="65" id="9td-Cq-6zu"/>
+                            <constraint firstItem="cMP-nL-u1C" firstAttribute="leading" secondItem="r8n-aL-Ehr" secondAttribute="leading" constant="28" id="A1r-0e-5z3"/>
+                            <constraint firstItem="t0j-oH-Kkr" firstAttribute="leading" secondItem="r8n-aL-Ehr" secondAttribute="leading" id="DPb-jN-wP2"/>
+                            <constraint firstItem="7nl-aG-LWf" firstAttribute="top" secondItem="wGQ-YZ-FaX" secondAttribute="bottom" constant="164" id="QD6-on-uAa"/>
+                            <constraint firstItem="umO-Gq-yZD" firstAttribute="top" secondItem="oA3-mX-sSA" secondAttribute="bottom" constant="45" id="QpC-sA-JoP"/>
+                            <constraint firstAttribute="trailing" secondItem="7nl-aG-LWf" secondAttribute="trailing" constant="28" id="Tuv-Jf-4IY"/>
+                            <constraint firstItem="umO-Gq-yZD" firstAttribute="top" secondItem="cMP-nL-u1C" secondAttribute="bottom" constant="45" id="XP5-ot-tbu"/>
+                            <constraint firstAttribute="trailing" secondItem="oA3-mX-sSA" secondAttribute="trailing" constant="28" id="bPo-Rd-UFD"/>
+                            <constraint firstItem="JFr-v0-2qh" firstAttribute="leading" secondItem="Ziq-49-Qag" secondAttribute="trailing" constant="2" id="bgE-hh-1uh"/>
+                            <constraint firstItem="t0j-oH-Kkr" firstAttribute="top" secondItem="wGQ-YZ-FaX" secondAttribute="bottom" id="dcf-cR-iCz"/>
+                            <constraint firstAttribute="trailing" secondItem="t0j-oH-Kkr" secondAttribute="trailing" id="fVp-b8-XSg"/>
+                            <constraint firstItem="oA3-mX-sSA" firstAttribute="width" secondItem="cMP-nL-u1C" secondAttribute="width" id="gjA-up-OrK"/>
+                            <constraint firstItem="Ziq-49-Qag" firstAttribute="top" secondItem="wGQ-YZ-FaX" secondAttribute="bottom" constant="65" id="jPK-2v-kPL"/>
+                            <constraint firstItem="7nl-aG-LWf" firstAttribute="leading" secondItem="r8n-aL-Ehr" secondAttribute="leading" constant="28" id="mEm-34-cFz"/>
+                            <constraint firstAttribute="centerX" secondItem="7nl-aG-LWf" secondAttribute="centerX" id="mFs-Hr-9a0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tDj-yL-y8F"/>
+                    <connections>
+                        <outlet property="questionLabel" destination="7nl-aG-LWf" id="bf7-rh-q5e"/>
+                        <outlet property="scoreLabel" destination="JFr-v0-2qh" id="LGW-AF-6Zd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RXU-T7-uyU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2614" y="1120"/>
+        </scene>
+        <!--Religiocentrism View Controller-->
+        <scene sceneID="4Xx-Ik-NoO">
+            <objects>
+                <viewController id="k3i-KZ-60a" customClass="ReligiocentrismViewController" customModule="Xeno" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zMc-t5-E5C"/>
+                        <viewControllerLayoutGuide type="bottom" id="3rh-r7-czb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C9N-Kh-OYn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPJ-d5-5aj">
+                                <rect key="frame" x="28" y="184" width="544" height="21"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Im9-Yj-JIT">
+                                <rect key="frame" x="501" y="85" width="54" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="RyY-M6-njw"/>
+                                    <constraint firstAttribute="height" constant="21" id="Wpf-76-pdS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xl7-xj-QMT">
+                                <rect key="frame" x="28" y="468" width="240" height="40"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.78039215689999997" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="AAp-jk-1J2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="True">
+                                    <color key="titleColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="userAnsweredTrue" destination="EUF-V7-d0T" eventType="touchUpInside" id="kSk-pY-yk6"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="religiocentrismShowAnswerTrue" id="M1i-2Q-Mae"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVp-K4-DcT">
+                                <rect key="frame" x="332" y="468" width="240" height="40"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.30980392159999998" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="G9E-1C-wY5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="False">
+                                    <color key="titleColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="userAnsweredFalse" destination="EUF-V7-d0T" eventType="touchUpInside" id="zNw-SW-Y4C"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="religiocentrismShowAnswerFalse" id="p7f-fO-nSj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="##" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nH-jk-54d">
+                                <rect key="frame" x="557" y="85" width="27" height="21"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2EN-jZ-BtH">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" red="0.53725490200000003" green="0.62745098040000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="KannadaSangamMN-Bold" family="Kannada Sangam MN" pointSize="16"/>
+                                    <color key="textColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Religiocentrism" id="74p-rB-51N"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2EN-jZ-BtH" firstAttribute="leading" secondItem="C9N-Kh-OYn" secondAttribute="leading" id="4GK-HP-yyU"/>
+                            <constraint firstItem="Im9-Yj-JIT" firstAttribute="top" secondItem="zMc-t5-E5C" secondAttribute="bottom" constant="65" id="8BX-2b-7td"/>
+                            <constraint firstItem="xl7-xj-QMT" firstAttribute="leading" secondItem="C9N-Kh-OYn" secondAttribute="leading" constant="28" id="977-Ow-FJL"/>
+                            <constraint firstAttribute="trailing" secondItem="2EN-jZ-BtH" secondAttribute="trailing" id="FCX-vG-yEf"/>
+                            <constraint firstAttribute="trailing" secondItem="6nH-jk-54d" secondAttribute="trailing" constant="16" id="Fcu-tH-dTP"/>
+                            <constraint firstItem="vPJ-d5-5aj" firstAttribute="leading" secondItem="C9N-Kh-OYn" secondAttribute="leading" constant="28" id="Fgc-p8-n1N"/>
+                            <constraint firstItem="sVp-K4-DcT" firstAttribute="leading" secondItem="xl7-xj-QMT" secondAttribute="trailing" constant="28" id="G7N-Ma-yVg"/>
+                            <constraint firstAttribute="trailing" secondItem="sVp-K4-DcT" secondAttribute="trailing" constant="28" id="LSK-Eo-8rl"/>
+                            <constraint firstItem="3rh-r7-czb" firstAttribute="top" secondItem="sVp-K4-DcT" secondAttribute="bottom" constant="45" id="MGA-fe-cHd"/>
+                            <constraint firstItem="vPJ-d5-5aj" firstAttribute="top" secondItem="zMc-t5-E5C" secondAttribute="bottom" constant="164" id="NKv-2A-Nng"/>
+                            <constraint firstItem="sVp-K4-DcT" firstAttribute="width" secondItem="xl7-xj-QMT" secondAttribute="width" id="VqQ-Di-sfW"/>
+                            <constraint firstItem="2EN-jZ-BtH" firstAttribute="top" secondItem="zMc-t5-E5C" secondAttribute="bottom" id="Zi9-Is-gik"/>
+                            <constraint firstItem="3rh-r7-czb" firstAttribute="top" secondItem="xl7-xj-QMT" secondAttribute="bottom" constant="45" id="Zmj-6B-ZM3"/>
+                            <constraint firstAttribute="centerX" secondItem="vPJ-d5-5aj" secondAttribute="centerX" id="bEr-T0-hnD"/>
+                            <constraint firstItem="6nH-jk-54d" firstAttribute="top" secondItem="zMc-t5-E5C" secondAttribute="bottom" constant="65" id="kZq-EO-7vb"/>
+                            <constraint firstItem="6nH-jk-54d" firstAttribute="leading" secondItem="Im9-Yj-JIT" secondAttribute="trailing" constant="2" id="tnU-IM-W8D"/>
+                            <constraint firstAttribute="trailing" secondItem="vPJ-d5-5aj" secondAttribute="trailing" constant="28" id="ud6-wZ-Gzu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="w6c-Qd-ETc"/>
+                    <connections>
+                        <outlet property="questionLabel" destination="vPJ-d5-5aj" id="aZU-PQ-jcd"/>
+                        <outlet property="scoreLabel" destination="6nH-jk-54d" id="Nl8-Vd-9Ye"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AVY-0D-Yz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2614" y="1826"/>
+        </scene>
+        <!--Ableism View Controller-->
+        <scene sceneID="urp-qE-dZe">
+            <objects>
+                <viewController id="KDx-J6-SZV" customClass="AbleismViewController" customModule="Xeno" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wTC-wT-nUk"/>
+                        <viewControllerLayoutGuide type="bottom" id="xbb-wf-bqV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ysW-hS-l7a">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Question Text" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iuq-OB-96g">
+                                <rect key="frame" x="28" y="184" width="544" height="21"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vo7-Ha-Fgo">
+                                <rect key="frame" x="501" y="85" width="54" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="DfV-oa-kVK"/>
+                                    <constraint firstAttribute="height" constant="21" id="voF-rx-tce"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="945-94-9gD">
+                                <rect key="frame" x="28" y="468" width="240" height="40"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.78039215689999997" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7gM-ff-8pE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="True">
+                                    <color key="titleColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="userAnsweredTrue" destination="EUF-V7-d0T" eventType="touchUpInside" id="jry-H6-4fe"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="ableismShowAnswerTrue" id="n3D-zf-aWB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRd-pp-QjD">
+                                <rect key="frame" x="332" y="468" width="240" height="40"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.30980392159999998" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rTZ-Aw-Gov"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="False">
+                                    <color key="titleColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="userAnsweredFalse" destination="EUF-V7-d0T" eventType="touchUpInside" id="KSO-xb-5di"/>
+                                    <segue destination="r85-gp-MsT" kind="push" identifier="ableismShowAnswerFalse" id="ku7-Y1-VAm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="##" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYN-SP-ANx">
+                                <rect key="frame" x="557" y="85" width="27" height="21"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <color key="textColor" red="0.1529411765" green="0.16862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PSn-jo-7vo">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" red="0.53725490200000003" green="0.62745098040000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="KannadaSangamMN-Bold" family="Kannada Sangam MN" pointSize="16"/>
+                                    <color key="textColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Ableism" id="HTj-pa-Euw"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vo7-Ha-Fgo" firstAttribute="top" secondItem="wTC-wT-nUk" secondAttribute="bottom" constant="65" id="1lI-ts-aQK"/>
+                            <constraint firstItem="Iuq-OB-96g" firstAttribute="leading" secondItem="ysW-hS-l7a" secondAttribute="leading" constant="28" id="5Tv-TR-WM0"/>
+                            <constraint firstItem="SYN-SP-ANx" firstAttribute="top" secondItem="wTC-wT-nUk" secondAttribute="bottom" constant="65" id="Bvs-zg-htS"/>
+                            <constraint firstItem="SYN-SP-ANx" firstAttribute="leading" secondItem="vo7-Ha-Fgo" secondAttribute="trailing" constant="2" id="F1T-g8-M9Z"/>
+                            <constraint firstItem="xbb-wf-bqV" firstAttribute="top" secondItem="mRd-pp-QjD" secondAttribute="bottom" constant="45" id="FpJ-Sf-NCM"/>
+                            <constraint firstItem="mRd-pp-QjD" firstAttribute="width" secondItem="945-94-9gD" secondAttribute="width" id="Gkm-5i-OKf"/>
+                            <constraint firstAttribute="centerX" secondItem="Iuq-OB-96g" secondAttribute="centerX" id="H08-FJ-v8f"/>
+                            <constraint firstItem="Iuq-OB-96g" firstAttribute="top" secondItem="wTC-wT-nUk" secondAttribute="bottom" constant="164" id="Rbe-9P-am3"/>
+                            <constraint firstItem="PSn-jo-7vo" firstAttribute="leading" secondItem="ysW-hS-l7a" secondAttribute="leading" id="Yfl-UE-JBZ"/>
+                            <constraint firstItem="mRd-pp-QjD" firstAttribute="leading" secondItem="945-94-9gD" secondAttribute="trailing" constant="28" id="dqV-fh-n9J"/>
+                            <constraint firstItem="945-94-9gD" firstAttribute="leading" secondItem="ysW-hS-l7a" secondAttribute="leading" constant="28" id="iMd-D6-eY8"/>
+                            <constraint firstAttribute="trailing" secondItem="SYN-SP-ANx" secondAttribute="trailing" constant="16" id="lC8-uh-emS"/>
+                            <constraint firstItem="xbb-wf-bqV" firstAttribute="top" secondItem="945-94-9gD" secondAttribute="bottom" constant="45" id="lCr-oo-qNR"/>
+                            <constraint firstAttribute="trailing" secondItem="PSn-jo-7vo" secondAttribute="trailing" id="lbu-h7-oYJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Iuq-OB-96g" secondAttribute="trailing" constant="28" id="o22-yw-fOI"/>
+                            <constraint firstAttribute="trailing" secondItem="mRd-pp-QjD" secondAttribute="trailing" constant="28" id="rQ7-3W-Wr5"/>
+                            <constraint firstItem="PSn-jo-7vo" firstAttribute="top" secondItem="wTC-wT-nUk" secondAttribute="bottom" id="rbZ-sU-MVh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TFX-0r-ebS"/>
+                    <connections>
+                        <outlet property="questionLabel" destination="Iuq-OB-96g" id="6el-KR-c4S"/>
+                        <outlet property="scoreLabel" destination="SYN-SP-ANx" id="t5g-NZ-7QW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F8F-4O-uwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2614" y="2564"/>
+        </scene>
         <!--Answer View Controller-->
         <scene sceneID="o2p-GD-6gN">
             <objects>
@@ -136,7 +578,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Response (Correct or Incorrect)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sat-xM-qwz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Response (True or False)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sat-xM-qwz">
                                 <rect key="frame" x="180" y="366" width="241" height="21"/>
                                 <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -154,7 +596,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="EUF-V7-d0T" kind="push" identifier="showRacismViewController" id="oiF-jd-coE"/>
+                                    <segue destination="EUF-V7-d0T" kind="show" identifier="showRacismViewController" id="8HM-2w-qsN"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPR-O5-sgQ">
@@ -222,13 +664,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ocx-w2-n0J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3382" y="-292"/>
+            <point key="canvasLocation" x="3547" y="1120"/>
         </scene>
         <!--Racism-->
         <scene sceneID="5xv-md-Dxc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="gJS-pE-LDq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Racism" id="V2E-fj-9eW"/>
+                    <tabBarItem key="tabBarItem" title="Racism" image="Racism Icon" id="V2E-fj-9eW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qXA-2F-43O">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -255,15 +697,103 @@
                     </tabBar>
                     <connections>
                         <segue destination="gJS-pE-LDq" kind="relationship" relationship="viewControllers" id="2xr-Kt-aHn"/>
+                        <segue destination="lXv-eg-Il4" kind="relationship" relationship="viewControllers" id="vZt-OJ-Z3u"/>
+                        <segue destination="En1-dI-RV8" kind="relationship" relationship="viewControllers" id="dI4-pi-bwv"/>
+                        <segue destination="ykD-5o-9xq" kind="relationship" relationship="viewControllers" id="UjZ-tx-DDp"/>
+                        <segue destination="aSW-EB-8th" kind="relationship" relationship="viewControllers" id="Jd1-ri-ddB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k0H-8d-mTR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="986" y="192"/>
+            <point key="canvasLocation" x="952" y="1120"/>
+        </scene>
+        <!--Sexism-->
+        <scene sceneID="5Ui-je-lj3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="lXv-eg-Il4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Sexism" image="Sexism Icon" id="Pno-vH-hNB"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L5h-IP-rHA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tip-2d-NMm" kind="relationship" relationship="rootViewController" id="TDO-BC-Ktc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pgo-Vg-HYM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802" y="408"/>
+        </scene>
+        <!--Homotransphobia-->
+        <scene sceneID="APc-Qx-W8i">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="En1-dI-RV8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Homotransphobia" image="Homotransphobia Icon" id="Spq-0b-3W6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="16q-zD-vDq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2lU-Ra-XQ8" kind="relationship" relationship="rootViewController" id="DS1-ts-8hy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DVq-a5-ydD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802" y="1120"/>
+        </scene>
+        <!--Religiocentrism-->
+        <scene sceneID="p8x-4D-G09">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ykD-5o-9xq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Religiocentrism" image="Religiocentrism Icon" id="iPu-tJ-gR9"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rBC-Ww-7Ia">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="k3i-KZ-60a" kind="relationship" relationship="rootViewController" id="F6y-wC-BSu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uEE-2A-JEL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802" y="1826"/>
+        </scene>
+        <!--Ableism-->
+        <scene sceneID="iru-B6-yJX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="aSW-EB-8th" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ableism" image="Ableism Icon" id="MDi-8F-nsU"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aSU-Pi-afH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KDx-J6-SZV" kind="relationship" relationship="rootViewController" id="K91-7F-waY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kv9-Gm-1YZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802" y="2564"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Ableism Icon" width="29" height="29"/>
+        <image name="Homotransphobia Icon" width="29" height="29"/>
+        <image name="Racism Icon" width="40" height="40"/>
+        <image name="Religiocentrism Icon" width="29" height="29"/>
+        <image name="Sexism Icon" width="29" height="29"/>
+    </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="n3D-zf-aWB"/>
         <segue reference="gCb-T6-qQ6"/>
-        <segue reference="cnU-aX-e2x"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.53725490200000003" green="0.62745098040000002" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
 </document>

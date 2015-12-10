@@ -1,16 +1,16 @@
 //
-//  RacismViewController.swift
+//  AbleismViewController.swift
 //  Xeno
 //
-//  Created by Gale Bonker on 12/2/15.
+//  Created by Gale Bonker on 12/10/15.
 //  Copyright (c) 2015 Gale Bonker. All rights reserved.
 //
 
 import UIKit
 
-class RacismViewController: UIViewController {
+class AbleismViewController: UIViewController {
 
-    let questionSet = QuestionSet(choice: "racism")
+    let questionSet = QuestionSet(choice: "ableism")
     var question: Question?
     var game: Game!
     var userAnswer: Bool?
@@ -52,13 +52,13 @@ class RacismViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "racismShowAnswerTrue" {
+        if segue.identifier == "ableismShowAnswerTrue" {
             let showAnswer:AnswerViewController = segue.destinationViewController as! AnswerViewController
             showAnswer.question = self.question
             showAnswer.game = self.game
             showAnswer.userAnswer = userAnswer
         }
-        if segue.identifier == "racismShowAnswerFalse" {
+        if segue.identifier == "ableismShowAnswerFalse" {
             let showAnswer:AnswerViewController = segue.destinationViewController as! AnswerViewController
             showAnswer.question = self.question
             showAnswer.game = self.game
@@ -75,5 +75,16 @@ class RacismViewController: UIViewController {
         scoreLabel.text = String(game.score)
     }
 
-}
+    
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

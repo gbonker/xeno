@@ -11,7 +11,7 @@ import UIKit
 class AnswerViewController: UIViewController {
 
     var question: Question?
-    var game: Game?
+    var game = Game()
     var userAnswer: Bool?
     
     @IBOutlet weak var questionLabel: UILabel!
@@ -36,7 +36,7 @@ class AnswerViewController: UIViewController {
             
             if thisQuestion.isCorrect(true) { // if the user answered true and the actual answer is true
                 answerLabel.text = "True"
-            } else { //thisQuestion.isCorrect(true) == false (if the user answered true and
+            } else {
                 answerLabel.text = "False"
             }
             //game!.calculateScore()
@@ -54,12 +54,28 @@ class AnswerViewController: UIViewController {
             let showRacism:RacismViewController = segue.destinationViewController as! RacismViewController
             showRacism.game = self.game
         }
+        if segue.identifier == "showSexismViewController" {
+            let showSexism:SexismViewController = segue.destinationViewController as! SexismViewController
+            showSexism.game = self.game
+        }
+        if segue.identifier == "showHomotransphobiaViewController" {
+            let showHomotransphobia:HomotransphobiaViewController = segue.destinationViewController as! HomotransphobiaViewController
+            showHomotransphobia.game = self.game
+        }
+        if segue.identifier == "showReligiocentrismViewController" {
+            let showReligiocentrism:ReligiocentrismViewController = segue.destinationViewController as! ReligiocentrismViewController
+            showReligiocentrism.game = self.game
+        }
+        if segue.identifier == "showAbleismViewController" {
+            let showAbleism:AbleismViewController = segue.destinationViewController as! AbleismViewController
+            showAbleism.game = self.game
+        }
 
     }
     
     
     func updateLabels() {
-        scoreLabel.text = String(game!.score)
+        scoreLabel.text = String(game.score)
     }
 
     /*
