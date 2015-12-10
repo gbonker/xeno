@@ -117,6 +117,7 @@
                     <navigationItem key="navigationItem" id="7R0-XT-EsQ"/>
                     <connections>
                         <outlet property="questionLabel" destination="Ozj-D9-M8A" id="KCF-2f-ldm"/>
+                        <outlet property="scoreLabel" destination="0CM-RH-Tmx" id="KQn-jr-an1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xD2-xc-Kbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -153,7 +154,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="EUF-V7-d0T" kind="push" id="oiF-jd-coE"/>
+                                    <segue destination="EUF-V7-d0T" kind="push" identifier="showRacismViewController" id="oiF-jd-coE"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPR-O5-sgQ">
@@ -223,11 +224,11 @@
             </objects>
             <point key="canvasLocation" x="3382" y="-292"/>
         </scene>
-        <!--Item-->
+        <!--Racism-->
         <scene sceneID="5xv-md-Dxc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="gJS-pE-LDq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="V2E-fj-9eW"/>
+                    <tabBarItem key="tabBarItem" title="Racism" id="V2E-fj-9eW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qXA-2F-43O">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -262,7 +263,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="gCb-T6-qQ6"/>
         <segue reference="cnU-aX-e2x"/>
-        <segue reference="oiF-jd-coE"/>
     </inferredMetricsTieBreakers>
 </document>

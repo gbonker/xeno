@@ -12,7 +12,7 @@ class RacismViewController: UIViewController {
 
     let questionSet = QuestionSet(choice: "racism")
     var question: Question?
-    var game = Game()
+    var game: Game!
     var userAnswer: Bool?
     
     @IBOutlet weak var questionLabel: UILabel!
@@ -26,34 +26,42 @@ class RacismViewController: UIViewController {
     // because we want a new question every time this view appears
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        if game == nil {
+            game = Game()
+        }
         if let question = questionSet.drawRandomQuestion() {
             self.question = question
             questionLabel.text = question.question
+            updateLabels()
             
         }
     }
     
     @IBAction func userAnsweredTrue() {
         userAnswer = true
+        game.question = self.question
         game.userAnswer = true
+        game.calculateScore()
     }
     
     
     @IBAction func userAnsweredFalse() {
         userAnswer = false
+        game.question = self.question
         game.userAnswer = false
+        game.calculateScore()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showAnswerTrue" {
-            game.userAnswer = true
+//            game.userAnswer = true
             let showDefinition:AnswerViewController = segue.destinationViewController as! AnswerViewController
             showDefinition.question = self.question
             showDefinition.game = self.game
             showDefinition.userAnswer = userAnswer
         }
         if segue.identifier == "showAnswerFalse" {
-            game.userAnswer = false
+//            game.userAnswer = false
             let showDefinition:AnswerViewController = segue.destinationViewController as! AnswerViewController
             showDefinition.question = self.question
             showDefinition.game = self.game

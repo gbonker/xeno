@@ -26,11 +26,7 @@ class Game {
         if let thisQuestion = question {
             if thisQuestion.isCorrect(self.userAnswer!) {
                 self.score += 1
-                println("Question is \(thisQuestion.question). The answer is true and you were correct.")
-                println(self.score)
-            } else if thisQuestion.isCorrect(self.userAnswer!) {
-                self.score += 1
-                println("Question is \(thisQuestion.question). The answer is false and you were correct.")
+                println("Question is \(thisQuestion.question). you were correct.")
                 println(self.score)
             } else {
                 self.score += 0

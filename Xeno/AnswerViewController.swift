@@ -29,17 +29,17 @@ class AnswerViewController: UIViewController {
         
         // we need to safely unpack the question and display the data, if present
         if let thisQuestion = question {
-            game!.question = thisQuestion
-            game!.userAnswer = userAnswer
+            //game!.question = thisQuestion
+            //game!.userAnswer = userAnswer
             questionLabel.text = thisQuestion.question
             
             
-            if thisQuestion.isCorrect(true) {
+            if thisQuestion.isCorrect(true) { // if the user answered true and the actual answer is true
                 answerLabel.text = "True"
-            } else {
+            } else { //thisQuestion.isCorrect(true) == false (if the user answered true and
                 answerLabel.text = "False"
             }
-            game!.calculateScore()
+            //game!.calculateScore()
             updateLabels()
         }
     }
@@ -48,6 +48,15 @@ class AnswerViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showRacismViewController" {
+            let showRacism:RacismViewController = segue.destinationViewController as! RacismViewController
+            showRacism.game = self.game
+        }
+
+    }
+    
     
     func updateLabels() {
         scoreLabel.text = String(game!.score)
