@@ -30,9 +30,13 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
+<<<<<<< NavBarExperimentation
             endingLineNumber = "22"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
+=======
+            endingLineNumber = "22">
+>>>>>>> local
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
