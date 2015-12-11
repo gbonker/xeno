@@ -15,18 +15,11 @@ class RacismViewController: UIViewController {
     var game: Game!
     var userAnswer: Bool?
     
-    // colors
-//    var navBarBackgroundColor = UIColor(red: 137 / 255, green: 160 / 255, blue: 220 / 255, alpha: 1) // indigo
-//    var navBarTextColor = UIColor(red: 225 / 255, green: 225 / 255, blue: 252 / 255, alpha: 1) // off-white
-    
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.navigationController?.navigationBar.barTintColor = navBarBackgroundColor
-//        self.navigationController?.navigationBar.tintColor = navBarTextColor
-//        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: navBarTextColor]
     }
     
     // We want a new question every time this view appears

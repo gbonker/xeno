@@ -11,9 +11,7 @@ import Foundation
 class Game {
     
     var score: Int
-    
     var question: Question?
-    
     var userAnswer: Bool?
     
     init() {
@@ -26,17 +24,11 @@ class Game {
         if let thisQuestion = question {
             if thisQuestion.isCorrect(self.userAnswer!) {
                 self.score += 1
-                println("Question is \(thisQuestion.question). you were correct.")
-                println(self.score)
             } else {
                 self.score += 0
-                println("Question is \(thisQuestion.question). You did not answer the question correctly.")
-                println(self.score)
             }
         } else {
             self.score += 0
-            println("We are in the wrong place.")
-            println(self.score)
         }
     }
     

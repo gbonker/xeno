@@ -88,6 +88,7 @@ class QuestionSet {
         "The representation of women in the media is heavily tied to capitalism." : true,
         "Oftentimes, men are not taught how to express emotion in healthy ways." : true,
         "One in three women on college campuses will experience sexual assault or domestic violence while attending their university." : true,
+        "Male-identified people shouldn't cry; it's shameful." : false
     ]
     
     let homotransphobiaQuestionsData = [
@@ -135,7 +136,7 @@ class QuestionSet {
         "Queer was once a derogatory term, but it has been reclaimed by many nowadays to mean a word that is inclusive of anyone that is not cisgender and/or heterosexual." : true,
         "The rainbow is the official pride symbol for LGBTQ+ people. The colors (red, orange, yellow, green, blue, and purple) represent diversity within the community." : true,
         "Genderqueer is a term for someone who rejects the gender binary and its roles and language." : true,
-        "Two-spirited is a Native American term to refer to people with characteristics of multiple genders." : true,
+        "Two-spirit is a Native American term to refer to people with characteristics of multiple genders." : true,
         "Gay people molest children at far higher rates than heterosexual people." : false,
         "Same sex parents harm children because children need a female and male role model in their lives." : false,
         "People become gay because they were sexually abused as children or there was a deficiency in role modeling by their parents." : false,

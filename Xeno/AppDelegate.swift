@@ -16,12 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        var navBarBackgroundColor = UIColor(red: 137 / 255, green: 160 / 255, blue: 220 / 255, alpha: 1) // indigo
-        var navBarTextColor = UIColor(red: 225 / 255, green: 225 / 255, blue: 252 / 255, alpha: 1) // off-white
         
-        UINavigationBar.appearance().barTintColor = navBarBackgroundColor
-        UINavigationBar.appearance().tintColor = navBarTextColor
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : navBarTextColor]
+        //Change the colors of things
+        var indigoColor = UIColor(red: 137 / 255, green: 160 / 255, blue: 220 / 255, alpha: 1)
+        var offWhiteColor = UIColor(red: 225 / 255, green: 225 / 255, blue: 252 / 255, alpha: 1)
+        //var blackColor = UIColor(red: 39 / 255, green: 43 / 255, blue: 49 / 255, alpha: 1)
+        
+        UINavigationBar.appearance().barTintColor = indigoColor
+        UINavigationBar.appearance().tintColor = offWhiteColor
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : offWhiteColor]
+        
+        UITabBar.appearance().barTintColor = offWhiteColor
+        //UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: blackColor], forState:.Normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: indigoColor], forState:.Selected)
+        self.window!.tintColor = indigoColor
         return true
         
     }
