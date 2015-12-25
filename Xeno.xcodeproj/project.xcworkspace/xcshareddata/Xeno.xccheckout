@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>DCFCC6C6-2553-4F8A-8D0C-3EBB57F111C0</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Xeno</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>6DB5DD76564636458FA9D26D060FBA57E3953667</key>
 		<string>https://github.com/gbonker/xeno.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Xeno.xcodeproj/project.xcworkspace</string>
+	<string>Xeno.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>6DB5DD76564636458FA9D26D060FBA57E3953667</key>
